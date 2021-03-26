@@ -1,0 +1,42 @@
+// FOOTER :: START
+
+.footer {
+	position: relative;
+	padding-top: 80px;
+	background: linear-gradient(139.83deg, #00CAAD -47.82%, #7168ED 94.19%), linear-gradient(342.17deg, #672DC2 38.56%, #9747F9 109.18%), #292448;
+
+	&__bg {
+		z-index: 0;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+
+		> div {
+			position: absolute;
+
+			&:nth-of-type(1) {}
+			&:nth-of-type(2) {}
+		}
+	}
+
+	&__wrapper {
+		z-index: 2;
+		position: relative;
+
+		&-1 {
+			padding-bottom: 81px;
+		}
+
+		&-2 {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			min-height: 125px;
+			border-top: 1px solid rgba(#FFFFFF, 0.4);
+		}
+	}
+}
+
+// FOOTER :: END

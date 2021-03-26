@@ -1,0 +1,18 @@
+// BUTTON :: START
+
+.c-btn {
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+  }
+}
+
+// BUTTON :: END

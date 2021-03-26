@@ -1,0 +1,15 @@
+ProjectTitle: Segundalinha
+
+PageList:
+- file: index.html
+  titleName: Homepage
+  ready: 1
+- file: team.html
+  titleName: My Team
+  ready: 1
+- file: download.html
+  titleName: Download
+  ready: 1
+- file: About.html
+  titleName: About
+  ready: 1
