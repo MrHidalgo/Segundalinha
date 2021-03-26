@@ -27,20 +27,35 @@
 @function icon-char($filename) {
 	$char: "";
 
-	@if $filename == facebook {
+	@if $filename == android {
 		$char: "\E001";
 	}
-	@if $filename == instagram {
+	@if $filename == apple {
 		$char: "\E002";
 	}
-	@if $filename == twitter {
+	@if $filename == facebook {
 		$char: "\E003";
 	}
-	@if $filename == user {
+	@if $filename == global {
 		$char: "\E004";
 	}
-	@if $filename == youtube {
+	@if $filename == instagram {
 		$char: "\E005";
+	}
+	@if $filename == ios {
+		$char: "\E006";
+	}
+	@if $filename == twitter {
+		$char: "\E007";
+	}
+	@if $filename == user {
+		$char: "\E008";
+	}
+	@if $filename == windows {
+		$char: "\E009";
+	}
+	@if $filename == youtube {
+		$char: "\E00A";
 	}
 
 	@return $char;
@@ -57,12 +72,28 @@
 	}
 }
 
+.icon-android {
+	@include icon(android);
+
+}
+.icon-apple {
+	@include icon(apple);
+
+}
 .icon-facebook {
 	@include icon(facebook);
 
 }
+.icon-global {
+	@include icon(global);
+
+}
 .icon-instagram {
 	@include icon(instagram);
+
+}
+.icon-ios {
+	@include icon(ios);
 
 }
 .icon-twitter {
@@ -71,6 +102,10 @@
 }
 .icon-user {
 	@include icon(user);
+
+}
+.icon-windows {
+	@include icon(windows);
 
 }
 .icon-youtube {

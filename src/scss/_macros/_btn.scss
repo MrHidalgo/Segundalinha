@@ -8,10 +8,58 @@
   align-items: center;
   justify-content: center;
   width: auto;
+  height: 52px;
+  padding-left: 40px;
+  padding-right: 40px;
+  border: none;
+  border-radius: 2rem;
+  box-shadow: none;
+  background: linear-gradient(153.28deg, #00CAAD -3.1%, #7168ED 83.26%), linear-gradient(180deg, #FF77A0 0%, #8770FD 100%), linear-gradient(0deg, #572BE6, #572BE6), #5E56E9;
+  background-size: 200% 100%;
+
+  &:hover {
+    animation: animatedGradient 4s ease-in-out alternate infinite;
+  }
 
   &__wrapper {
     display: flex;
     align-items: center;
+
+    &--center {
+      justify-content: center;
+    }
+  }
+
+  .icon-font,
+  span {
+    color: #ffffff;
+  }
+
+  .icon-font {
+    font-size: 24px;
+
+    & + span {
+      padding-left: 15px;
+    }
+  }
+
+  span {
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 25px;
+    color: #F7F8FA;
+  }
+}
+
+@keyframes animatedGradient {
+  from {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  to {
+    background-position: 0 50%;
   }
 }
 

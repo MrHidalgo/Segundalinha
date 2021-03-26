@@ -9,7 +9,7 @@ PageList:
   ready: 1
 - file: download.html
   titleName: Download
-  ready: 1
+  ready: 55
 - file: About.html
   titleName: About
-  ready: 1
+  ready: 55

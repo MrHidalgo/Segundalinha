@@ -103,6 +103,10 @@
 			transform-origin: center;
 			backface-visibility: hidden;
 
+			&.is-animate {
+				@include transition(opacity, visibility, transform);
+			}
+
 			&.is-open {
 				opacity: 1;
 				visibility: visible;
