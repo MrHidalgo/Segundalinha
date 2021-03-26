@@ -3,6 +3,12 @@
 .logo {
 	display: flex;
 
+	&.logo--header {
+		.logo__btn {
+			max-width: 329px;
+		}
+	}
+
 	&.logo--footer {
 		padding-bottom: 47px;
 	}
@@ -10,10 +16,12 @@
 	&__btn {
 		display: flex;
 		align-items: flex-start;
+		width: 100%;
 		max-width: 357px;
 
 		img {
 			display: block;
+			width: 100%;
 			max-width: 100%;
 			height: auto;
 		}
