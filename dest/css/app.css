@@ -1583,6 +1583,120 @@ picture {
   line-height: 27px;
 }
 
+/* line 3, src/scss/_components/homepage/_developer.scss */
+.developer {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+/* line 7, src/scss/_components/homepage/_developer.scss */
+.developer__title {
+  padding-bottom: 15px;
+  font-weight: bold;
+  font-size: 45px;
+  line-height: 67px;
+  color: #00CAAD;
+  text-align: center;
+}
+
+/* line 16, src/scss/_components/homepage/_developer.scss */
+.developer__desc {
+  width: 100%;
+  max-width: 828px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 20px;
+  font-size: 28px;
+  line-height: 42px;
+  text-align: center;
+  color: #aeaeae;
+}
+
+/* line 28, src/scss/_components/homepage/_developer.scss */
+.developer__box {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+/* line 32, src/scss/_components/homepage/_developer.scss */
+.developer__box-wrapper {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+
+/* line 39, src/scss/_components/homepage/_developer.scss */
+.developer__box-wrapper > div {
+  width: 100%;
+  max-width: -webkit-calc(100% / 3);
+  max-width: calc(100% / 3);
+  padding-bottom: 50px;
+}
+
+/* line 47, src/scss/_components/homepage/_developer.scss */
+.developer__box-head {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+/* line 53, src/scss/_components/homepage/_developer.scss */
+.developer__box-head img {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 64, src/scss/_components/homepage/_developer.scss */
+.developer__box-title {
+  padding-bottom: 15px;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 42px;
+  text-align: center;
+  color: #E5E5E5;
+}
+
+/* line 73, src/scss/_components/homepage/_developer.scss */
+.developer__box-line {
+  width: 50px;
+  height: 2px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 25px;
+  -webkit-box-shadow: 0 4px 12px 0 rgba(43, 221, 219, 0.32);
+          box-shadow: 0 4px 12px 0 rgba(43, 221, 219, 0.32);
+  background-color: #45E8E6;
+}
+
+/* line 83, src/scss/_components/homepage/_developer.scss */
+.developer__box-desc {
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #959595;
+}
+
 /* line 3, src/scss/_components/download/_download.scss */
 .download {
   position: relative;
