@@ -408,9 +408,10 @@ picture {
   top: 0;
   left: 0;
   width: 100%;
+  background-color: #252e35;
 }
 
-/* line 10, src/scss/_components/common/_header.scss */
+/* line 11, src/scss/_components/common/_header.scss */
 .header__wrapper {
   display: -webkit-box;
   display: -webkit-flex;
@@ -424,13 +425,13 @@ picture {
   padding-bottom: 32px;
 }
 
-/* line 16, src/scss/_components/common/_header.scss */
+/* line 17, src/scss/_components/common/_header.scss */
 .header__wrapper-left, .header__wrapper-right {
   width: 100%;
   max-width: 460px;
 }
 
-/* line 22, src/scss/_components/common/_header.scss */
+/* line 23, src/scss/_components/common/_header.scss */
 .header__wrapper-middle {
   -webkit-box-flex: 1;
   -webkit-flex: 1;
@@ -440,7 +441,7 @@ picture {
   max-width: 100%;
 }
 
-/* line 28, src/scss/_components/common/_header.scss */
+/* line 29, src/scss/_components/common/_header.scss */
 .header__wrapper-right {
   display: -webkit-box;
   display: -webkit-flex;
@@ -452,7 +453,7 @@ picture {
           justify-content: flex-end;
 }
 
-/* line 34, src/scss/_components/common/_header.scss */
+/* line 35, src/scss/_components/common/_header.scss */
 .header__nav {
   display: -webkit-box;
   display: -webkit-flex;
@@ -464,7 +465,7 @@ picture {
           align-items: center;
 }
 
-/* line 38, src/scss/_components/common/_header.scss */
+/* line 39, src/scss/_components/common/_header.scss */
 .header__nav a {
   display: -webkit-box;
   display: -webkit-flex;
@@ -476,12 +477,12 @@ picture {
   color: #F6F8FA;
 }
 
-/* line 45, src/scss/_components/common/_header.scss */
+/* line 46, src/scss/_components/common/_header.scss */
 .header__nav a:not(:last-of-type) {
   margin-right: 35px;
 }
 
-/* line 51, src/scss/_components/common/_header.scss */
+/* line 52, src/scss/_components/common/_header.scss */
 .header__sign {
   display: -webkit-box;
   display: -webkit-flex;
@@ -493,16 +494,16 @@ picture {
           align-items: center;
 }
 
-/* line 55, src/scss/_components/common/_header.scss */
+/* line 56, src/scss/_components/common/_header.scss */
 .header__sign p {
-  padding-right: 20px;
+  padding-right: 50px;
   font-weight: 500;
   font-size: 18px;
   line-height: 27px;
   color: #FFFFFF;
 }
 
-/* line 63, src/scss/_components/common/_header.scss */
+/* line 64, src/scss/_components/common/_header.scss */
 .header__sign-btn {
   outline: none;
   position: relative;
@@ -526,34 +527,34 @@ picture {
   background-color: transparent;
 }
 
-/* line 77, src/scss/_components/common/_header.scss */
+/* line 78, src/scss/_components/common/_header.scss */
 .header__sign-btn:hover {
   background-color: #A9A3FF;
 }
 
-/* line 80, src/scss/_components/common/_header.scss */
+/* line 81, src/scss/_components/common/_header.scss */
 .header__sign-btn:hover .icon-font,
 .header__sign-btn:hover span {
   color: #fff;
 }
 
-/* line 86, src/scss/_components/common/_header.scss */
+/* line 87, src/scss/_components/common/_header.scss */
 .header__sign-btn .icon-font,
 .header__sign-btn span {
   color: #A9A3FF;
 }
 
-/* line 91, src/scss/_components/common/_header.scss */
+/* line 92, src/scss/_components/common/_header.scss */
 .header__sign-btn .icon-font {
   font-size: 24px;
 }
 
-/* line 94, src/scss/_components/common/_header.scss */
+/* line 95, src/scss/_components/common/_header.scss */
 .header__sign-btn .icon-font + span {
   padding-left: 10px;
 }
 
-/* line 99, src/scss/_components/common/_header.scss */
+/* line 100, src/scss/_components/common/_header.scss */
 .header__sign-btn span {
   font-weight: 500;
   font-size: 18px;
@@ -790,6 +791,81 @@ picture {
   font-weight: 500;
   font-size: 18px;
   line-height: 27px;
+}
+
+/* line 3, src/scss/_components/about/_about.scss */
+.about {
+  position: relative;
+  padding-top: 194px;
+  padding-bottom: 115px;
+}
+
+/* line 8, src/scss/_components/about/_about.scss */
+.about__bg {
+  z-index: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 16, src/scss/_components/about/_about.scss */
+.about__bg > div {
+  position: absolute;
+}
+
+/* line 19, src/scss/_components/about/_about.scss */
+.about__bg > div:nth-of-type(1) {
+  top: 40%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 0;
+}
+
+/* line 24, src/scss/_components/about/_about.scss */
+.about__bg > div:nth-of-type(1) img {
+  display: block;
+  max-width: 137px;
+  height: auto;
+  -webkit-filter: drop-shadow(-1px 33px 48px rgba(128, 119, 242, 0.52));
+          filter: drop-shadow(-1px 33px 48px rgba(128, 119, 242, 0.52));
+}
+
+/* line 33, src/scss/_components/about/_about.scss */
+.about__bg > div:nth-of-type(2) {
+  left: 50px;
+  bottom: 200px;
+}
+
+/* line 37, src/scss/_components/about/_about.scss */
+.about__bg > div:nth-of-type(3) {
+  top: 100px;
+  right: -0;
+}
+
+/* line 44, src/scss/_components/about/_about.scss */
+.about__wrapper {
+  z-index: 2;
+  position: relative;
+}
+
+/* line 49, src/scss/_components/about/_about.scss */
+.about__title {
+  padding-bottom: 40px;
+  font-weight: bold;
+  font-size: 45px;
+  line-height: 67px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+/* line 59, src/scss/_components/about/_about.scss */
+.about__desc p {
+  font-size: 18px;
+  line-height: 34px;
+  color: #E8E8E8;
 }
 
 /*# sourceMappingURL=maps/app.css.map */

@@ -6,6 +6,7 @@
 	top: 0;
 	left: 0;
 	width: 100%;
+	background-color: #252e35;
 
 	&__wrapper {
 		display: flex;
@@ -53,7 +54,7 @@
 		align-items: center;
 
 		p {
-			padding-right: 20px;
+			padding-right: 50px;
 			font-weight: 500;
 			font-size: 18px;
 			line-height: 27px;
