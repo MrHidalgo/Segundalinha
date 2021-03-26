@@ -12,6 +12,7 @@
     <!-- link(rel="icon" type="image/png" href="./icon/favicon.png")-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
     <!-- STYLE :: START-->
     <link rel="stylesheet" href="css/vendor.css">
     <link rel="stylesheet" href="css/app.css">
@@ -23,15 +24,21 @@
       <div class="c-grid">
         <div class="header__wrapper">
           <div class="header__wrapper-left">
-            <div class="logo logo--header"><a class="logo__btn" href="/"> <img src="img/logo.svg" alt=""></a></div>
+            <div class="logo logo--header"><a class="logo__btn" href="/"> <img src="img/logo.svg" alt=""><img src="img/logo-mobile.svg" alt=""></a></div>
+            <div class="hamburger hamburger--squeeze" role="button" hamburger-js="hamburger-js">
+              <div class="hamburger-box">
+                <div class="hamburger-inner"></div>
+              </div>
+            </div>
           </div>
-          <div class="header__wrapper-middle">
-            <nav class="header__nav"><a href="#">Sobre</a><a href="#">Download</a><a href="#">Blog</a></nav>
-          </div>
-          <div class="header__wrapper-right">
-            <div class="header__sign">
-              <p>Log In</p>
-              <div><a class="header__sign-btn" href="#"><i class="icon-font icon-user"></i><span>Registrar</span></a></div>
+          <div class="header__mobile" mobile-block-js>
+            <div class="header__wrapper-middle">
+              <nav class="header__nav"><a href="#">Sobre</a><a href="#">Download</a><a href="#">Blog</a></nav>
+            </div>
+            <div class="header__wrapper-right">
+              <div class="header__sign"><a href="#">Log In</a>
+                <div><a class="header__sign-btn" href="#"><i class="icon-font icon-user"></i><span>Registrar</span></a></div>
+              </div>
             </div>
           </div>
         </div>
@@ -41,15 +48,15 @@
     <div class="body body--start p-about">
       <!-- SECTION :: START-->
       <section class="about" id="about">
-        <div class="about__bg">
-          <div><img src="img/visual-about-1.png" alt=""></div>
-          <div><img src="img/visual-about-2.svg" alt=""></div>
-          <div><img src="img/visual-about-3.svg" alt=""></div>
+        <div class="about__bg" parallax-js>
+          <div data-stellar-ratio="0.85"><img src="img/visual-about-1.png" srcset="img/visual-about-1@2x.png 2x" alt="" floating-node-js></div>
+          <div data-stellar-ratio="1.15"><img src="img/visual-about-2.svg" alt="" floating-node-js></div>
+          <div data-stellar-ratio="0.8"><img src="img/visual-about-3.svg" alt="" floating-node-js></div>
         </div>
         <div class="c-grid">
           <div class="about__wrapper">
-            <h1 class="about__title">About us</h1>
-            <div class="about__desc">
+            <h1 class="about__title" data-aos="fade-up" data-aos-easing="ease-in-out">About us</h1>
+            <div class="about__desc" data-aos="fade-up" data-aos-delay="50" data-aos-easing="ease-in-out">
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sapien, sed aliquam ornare pharetra morbi at suspendisse. Rhoncus mattis nibh semper nam elit. Orci in interdum commodo sit faucibus imperdiet. Eget fames eget ornare sociis velit elit, feugiat vulputate. In rhoncus porttitor varius diam elit. Ante pellentesque aliquam dolor montes, id. Magna molestie semper dolor habitant donec vitae tortor, orci. A ultrices interdum vitae, suscipit. Pellentesque varius nunc, cras fermentum, penatibus vitae vel. Id lacus et, vestibulum aliquam lorem venenatis risus. Aliquet consectetur bibendum fames duis erat. Sit at maecenas sem nec enim lacus cursus nisi. Tristique ultrices aenean ut tristique non quam ligula.</p>
               <p>Dui ut laoreet dolor tortor facilisi faucibus commodo lectus. Tempor, praesent feugiat feugiat ac amet eu. Netus nisl ac hac ultricies fermentum natoque accumsan pellentesque. Ut massa volutpat tellus, sociis auctor amet, nisi, molestie risus. Eleifend magna praesent rhoncus duis amet, diam facilisis morbi tincidunt.</p>
               <p>Ullamcorper dapibus dictumst feugiat tellus, eu. Mattis dignissim velit suspendisse congue commodo, pretium mus. Etiam ullamcorper porttitor placerat consectetur. Diam neque ac, scelerisque sit interdum eget donec. Lorem augue sodales lorem morbi. Nunc eget id integer nisi, imperdiet hendrerit. Sit rhoncus, dui molestie faucibus scelerisque. Phasellus consequat risus eget dis porta velit pellentesque accumsan. Consectetur dictumst suscipit morbi ultrices potenti ullamcorper. Faucibus vitae velit neque, gravida felis sed. Aliquam ultrices et, tortor morbi tristique accumsan libero sit pulvinar. Amet arcu ultricies fames felis, commodo. Mus vel porta donec nisi ultrices justo.</p>
@@ -64,34 +71,33 @@
     </div>
     <!-- FOOTER :: START-->
     <footer class="footer" id="footer">
-      <div class="footer__bg">
-        <div><img src="img/dot-grid.svg" alt=""></div>
-        <div></div>
+      <div class="footer__bg" parallax-js>
+        <div data-stellar-ratio="1.1"><img src="img/dot-grid.svg" alt=""></div>
+        <div data-stellar-ratio="0.9"><span floating-node-js></span></div>
       </div>
       <div class="c-grid">
         <div class="footer__wrapper footer__wrapper-1">
-          <div class="footer__wrapper-left">
+          <div class="footer__wrapper-left" data-aos="fade-up" data-aos-easing="ease-in-out">
             <div class="logo logo--footer"><a class="logo__btn" href="/"><img src="img/logo--white.svg" alt=""></a></div>
             <p class="footer__info">Parque Tecnológico Alfa, Florianópolis - SC 88030-000 Telefone: +48 30171617</p>
-            <div class="footer__sign">
-              <p>Log In</p>
+            <div class="footer__sign"><a href="#">Log In</a>
               <div><a class="footer__sign-btn" href="#"><i class="icon-font icon-user"></i><span>Registrar</span></a></div>
             </div>
           </div>
           <div class="footer__wrapper-right">
-            <div>
+            <div data-aos="fade-up" data-aos-easing="ease-in-out">
               <p class="footer__title">Empresa</p>
               <nav class="footer__nav"><a href="#">Sobre</a><a href="#">Imprensa</a><a href="#">Termos de Serviço</a><a href="#">Termos de Serviço</a></nav>
             </div>
-            <div>
+            <div data-aos="fade-up" data-aos-easing="ease-in-out">
               <p class="footer__title">Contato</p>
               <nav class="footer__nav"><a href="#">E-mail</a><a href="#">Facebook</a><a href="#">Twitter</a><a href="#">Instagram</a></nav>
             </div>
-            <div>
+            <div data-aos="fade-up" data-aos-easing="ease-in-out">
               <p class="footer__title">Recursos</p>
               <nav class="footer__nav"><a href="#">Blog</a><a href="#">Novidades</a><a href="#">Downloads</a></nav>
             </div>
-            <div>
+            <div data-aos="fade-up" data-aos-easing="ease-in-out">
               <p class="footer__title">Artigos</p>
               <nav class="footer__nav"><a href="#">Article 1</a><a href="#">Article 2</a><a href="#">Article 3</a></nav>
             </div>
@@ -99,12 +105,12 @@
         </div>
         <div class="footer__wrapper footer__wrapper-2">
           <div class="footer__wrapper-left">
-            <div class="copyright">
+            <div class="copyright" data-aos="fade-up" data-aos-easing="ease-in-out">
               <p class="copyright__text">SegundaLinha © 2021. Todos os direitos reservados.</p>
             </div>
           </div>
           <div class="footer__wrapper-right">
-            <div class="social"><a href="#"><i class="icon-font icon-facebook"></i></a><a href="#"><i class="icon-font icon-twitter"></i></a><a href="#"><i class="icon-font icon-instagram"></i></a><a href="#"><i class="icon-font icon-youtube"></i></a></div>
+            <div class="social" data-aos="fade-up" data-aos-easing="ease-in-out"><a href="#"><i class="icon-font icon-facebook"></i></a><a href="#"><i class="icon-font icon-twitter"></i></a><a href="#"><i class="icon-font icon-instagram"></i></a><a href="#"><i class="icon-font icon-youtube"></i></a></div>
           </div>
         </div>
       </div>
@@ -112,6 +118,7 @@
     <!-- FOOTER :: END-->
   </body>
   <!-- SCRIPT :: START-->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script src="js/vendor.js"></script>
   <script src="js/app.js"></script>
   <!-- SCRIPT :: END-->

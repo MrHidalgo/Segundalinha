@@ -2,15 +2,16 @@
 
 footer#footer.footer
 
-  .footer__bg
-    div
+  .footer__bg(parallax-js)
+    div(data-stellar-ratio="1.1")
       img(src="img/dot-grid.svg" alt="")
-    div
+    div(data-stellar-ratio="0.9")
+      span(floating-node-js)
 
   .c-grid
     .footer__wrapper.footer__wrapper-1
 
-      .footer__wrapper-left
+      .footer__wrapper-left(data-aos="fade-up" data-aos-easing="ease-in-out")
 
         .logo.logo--footer
           a.logo__btn(href="/")
@@ -19,14 +20,14 @@ footer#footer.footer
         p.footer__info Parque Tecnológico Alfa, Florianópolis - SC 88030-000 Telefone: +48 30171617
 
         .footer__sign
-          p Log In
+          a(href="#") Log In
           div
             a.footer__sign-btn(href="#")
               i.icon-font.icon-user
               span Registrar
 
       .footer__wrapper-right
-        div
+        div(data-aos="fade-up" data-aos-easing="ease-in-out")
           p.footer__title Empresa
 
           nav.footer__nav
@@ -35,7 +36,7 @@ footer#footer.footer
             a(href="#") Termos de Serviço
             a(href="#") Termos de Serviço
 
-        div
+        div(data-aos="fade-up" data-aos-easing="ease-in-out")
           p.footer__title Contato
 
           nav.footer__nav
@@ -44,7 +45,7 @@ footer#footer.footer
             a(href="#") Twitter
             a(href="#") Instagram
 
-        div
+        div(data-aos="fade-up" data-aos-easing="ease-in-out")
           p.footer__title Recursos
 
           nav.footer__nav
@@ -52,7 +53,7 @@ footer#footer.footer
             a(href="#") Novidades
             a(href="#") Downloads
 
-        div
+        div(data-aos="fade-up" data-aos-easing="ease-in-out")
           p.footer__title Artigos
 
           nav.footer__nav
@@ -64,12 +65,12 @@ footer#footer.footer
 
       .footer__wrapper-left
 
-        .copyright
+        .copyright(data-aos="fade-up" data-aos-easing="ease-in-out")
           p.copyright__text SegundaLinha © 2021. Todos os direitos reservados.
 
       .footer__wrapper-right
 
-        .social
+        .social(data-aos="fade-up" data-aos-easing="ease-in-out")
           a(href="#")
             i.icon-font.icon-facebook
           a(href="#")

@@ -6,6 +6,20 @@
 	&.logo--header {
 		.logo__btn {
 			max-width: 329px;
+
+			img {
+				&:nth-of-type(1) {
+					@include adaptive(1279) {
+						display: none;
+					}
+				}
+				&:nth-of-type(2) {
+					display: none;
+					@include adaptive(1279) {
+						display: block;
+					}
+				}
+			}
 		}
 	}
 
@@ -21,9 +35,9 @@
 
 		img {
 			display: block;
-			width: 100%;
 			max-width: 100%;
 			height: auto;
+			max-height: 62px;
 		}
 	}
 }

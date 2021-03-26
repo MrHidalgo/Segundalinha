@@ -20,9 +20,29 @@
 		width: 32px;
 		height: 32px;
 
+		&:hover {
+			.icon-font {
+				transform: scale(1.1);
+				@include transition(transform);
+			}
+		}
+
 		.icon-font {
 			color: #ffffff;
+			font-size: 14px;
+			transform-origin: center;
+			@include transition(transform);
 		}
+	}
+}
+
+
+[parallax-js] {
+	&,
+	& > * {
+		transform-origin: center;
+		backface-visibility: hidden;
+		transition: transform 2s cubic-bezier(0, 0, 0, 1) 0s;
 	}
 }
 
