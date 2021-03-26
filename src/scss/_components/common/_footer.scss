@@ -16,8 +16,25 @@
 		> div {
 			position: absolute;
 
-			&:nth-of-type(1) {}
-			&:nth-of-type(2) {}
+			&:nth-of-type(1) {
+				top: -111px;
+				left: -30px;
+
+				img {
+					display: block;
+					max-width: 100%;
+					height: auto;
+				}
+			}
+			&:nth-of-type(2) {
+				top: -230px;
+				right: -200px;
+				width: 434px;
+				height: 434px;
+				border-radius: 46px;
+				transform: rotate(58deg);
+				background-color: #5E55E2;
+			}
 		}
 	}
 
@@ -26,7 +43,29 @@
 		position: relative;
 
 		&-1 {
+			display: flex;
 			padding-bottom: 81px;
+
+			.footer__wrapper {
+				&-left {
+					width: 100%;
+					max-width: 665px;
+					padding-right: 15px;
+				}
+
+				&-right {
+					display: flex;
+					flex: 1;
+					min-width: 1px;
+					max-width: 100%;
+
+					> div {
+						flex: 1;
+						min-width: 1px;
+						max-width: 100%;
+					}
+				}
+			}
 		}
 
 		&-2 {
@@ -35,6 +74,90 @@
 			justify-content: space-between;
 			min-height: 125px;
 			border-top: 1px solid rgba(#FFFFFF, 0.4);
+		}
+	}
+
+	&__title {
+		padding-bottom: 20px;
+		font-size: 20px;
+		line-height: 36px;
+		color: #EAEAEA;
+	}
+
+	&__nav {
+		display: flex;
+		flex-direction: column;
+
+		a {
+			font-size: 18px;
+			line-height: 47px;
+			color: #E9F7FE;
+		}
+	}
+
+	&__info {
+		width: 100%;
+		max-width: 552px;
+		padding-bottom: 15px;
+		font-size: 20px;
+		line-height: 31px;
+		color: #E9F7FE;
+	}
+
+	&__sign {
+		display: flex;
+		align-items: center;
+
+		p {
+			padding-right: 20px;
+			font-weight: 500;
+			font-size: 18px;
+			line-height: 27px;
+			color: #FFFFFF;
+		}
+
+		&-btn {
+			outline: none;
+			position: relative;
+			display: flex;
+			align-items: center;
+			width: auto;
+			height: 48px;
+			padding-left: 30px;
+			padding-right: 30px;
+			border: 2px solid #FFFFFF;
+			border-radius: 45px;
+			box-shadow: none;
+			background-color: transparent;
+
+			&:hover {
+				background-color: #ffffff;
+
+				.icon-font,
+				span {
+					color: #00CAAD;
+				}
+			}
+
+			.icon-font,
+			span {
+				color: #ffffff;
+			}
+
+			.icon-font {
+				font-size: 24px;
+
+				& + span {
+					padding-left: 10px;
+				}
+			}
+
+			span {
+				font-weight: 500;
+				font-size: 18px;
+				line-height: 27px;
+
+			}
 		}
 	}
 }

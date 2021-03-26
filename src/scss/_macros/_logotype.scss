@@ -1,5 +1,23 @@
 // LOGOTYPE :: START
 
-.logo {}
+.logo {
+	display: flex;
+
+	&.logo--footer {
+		padding-bottom: 47px;
+	}
+
+	&__btn {
+		display: flex;
+		align-items: flex-start;
+		max-width: 357px;
+
+		img {
+			display: block;
+			max-width: 100%;
+			height: auto;
+		}
+	}
+}
 
 // LOGOTYPE :: END

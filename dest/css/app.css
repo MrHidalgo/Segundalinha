@@ -1,3 +1,47 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "iconFont";
+  src: url("../fonts/iconFont.eot");
+  src: url("../fonts/iconFont.eot?#iefix") format("eot"), url("../fonts/iconFont.woff2") format("woff2"), url("../fonts/iconFont.woff") format("woff"), url("../fonts/iconFont.ttf") format("truetype"), url("../fonts/iconFont.svg#iconFont") format("svg");
+}
+
+/* line 23, src/scss/_generated/_spriteFont.scss */
+.icon-facebook:before, .icon-instagram:before, .icon-twitter:before, .icon-user:before, .icon-youtube:before {
+  font-family: "iconFont", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: none;
+}
+
+/* line 50, src/scss/_generated/_spriteFont.scss */
+.icon-facebook:before {
+  content: "";
+}
+
+/* line 50, src/scss/_generated/_spriteFont.scss */
+.icon-instagram:before {
+  content: "";
+}
+
+/* line 50, src/scss/_generated/_spriteFont.scss */
+.icon-twitter:before {
+  content: "";
+}
+
+/* line 50, src/scss/_generated/_spriteFont.scss */
+.icon-user:before {
+  content: "";
+}
+
+/* line 50, src/scss/_generated/_spriteFont.scss */
+.icon-youtube:before {
+  content: "";
+}
+
 /* line 1, src/scss/_shared/_main-setting-reset.scss */
 html,
 body {
@@ -230,6 +274,94 @@ picture {
   }
 }
 
+/* line 3, src/scss/_shared/_common.scss */
+.copyright {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/* line 6, src/scss/_shared/_common.scss */
+.copyright__text {
+  font-size: 14px;
+  line-height: 31px;
+  color: #D1E2E5;
+}
+
+/* line 13, src/scss/_shared/_common.scss */
+.social {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/* line 16, src/scss/_shared/_common.scss */
+.social a {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 32px;
+  height: 32px;
+}
+
+/* line 23, src/scss/_shared/_common.scss */
+.social a .icon-font {
+  color: #ffffff;
+}
+
+/* line 1, src/scss/_shared/_iconFont.scss */
+.icon-font {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  line-height: 1;
+}
+
+/* line 3, src/scss/_macros/_logotype.scss */
+.logo {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/* line 6, src/scss/_macros/_logotype.scss */
+.logo.logo--footer {
+  padding-bottom: 47px;
+}
+
+/* line 10, src/scss/_macros/_logotype.scss */
+.logo__btn {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  max-width: 357px;
+}
+
+/* line 15, src/scss/_macros/_logotype.scss */
+.logo__btn img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 /* line 3, src/scss/_macros/_btn.scss */
 .c-btn {
   outline: none;
@@ -286,18 +418,80 @@ picture {
   position: absolute;
 }
 
-/* line 24, src/scss/_components/common/_footer.scss */
+/* line 19, src/scss/_components/common/_footer.scss */
+.footer__bg > div:nth-of-type(1) {
+  top: -111px;
+  left: -30px;
+}
+
+/* line 23, src/scss/_components/common/_footer.scss */
+.footer__bg > div:nth-of-type(1) img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* line 29, src/scss/_components/common/_footer.scss */
+.footer__bg > div:nth-of-type(2) {
+  top: -230px;
+  right: -200px;
+  width: 434px;
+  height: 434px;
+  -webkit-border-radius: 46px;
+          border-radius: 46px;
+  -webkit-transform: rotate(58deg);
+      -ms-transform: rotate(58deg);
+          transform: rotate(58deg);
+  background-color: #5E55E2;
+}
+
+/* line 41, src/scss/_components/common/_footer.scss */
 .footer__wrapper {
   z-index: 2;
   position: relative;
 }
 
-/* line 28, src/scss/_components/common/_footer.scss */
+/* line 45, src/scss/_components/common/_footer.scss */
 .footer__wrapper-1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   padding-bottom: 81px;
 }
 
-/* line 32, src/scss/_components/common/_footer.scss */
+/* line 50, src/scss/_components/common/_footer.scss */
+.footer__wrapper-1 .footer__wrapper-left {
+  width: 100%;
+  max-width: 665px;
+  padding-right: 15px;
+}
+
+/* line 56, src/scss/_components/common/_footer.scss */
+.footer__wrapper-1 .footer__wrapper-right {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  min-width: 1px;
+  max-width: 100%;
+}
+
+/* line 62, src/scss/_components/common/_footer.scss */
+.footer__wrapper-1 .footer__wrapper-right > div {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  min-width: 1px;
+  max-width: 100%;
+}
+
+/* line 71, src/scss/_components/common/_footer.scss */
 .footer__wrapper-2 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -313,6 +507,123 @@ picture {
           justify-content: space-between;
   min-height: 125px;
   border-top: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+/* line 80, src/scss/_components/common/_footer.scss */
+.footer__title {
+  padding-bottom: 20px;
+  font-size: 20px;
+  line-height: 36px;
+  color: #EAEAEA;
+}
+
+/* line 87, src/scss/_components/common/_footer.scss */
+.footer__nav {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+/* line 91, src/scss/_components/common/_footer.scss */
+.footer__nav a {
+  font-size: 18px;
+  line-height: 47px;
+  color: #E9F7FE;
+}
+
+/* line 98, src/scss/_components/common/_footer.scss */
+.footer__info {
+  width: 100%;
+  max-width: 552px;
+  padding-bottom: 15px;
+  font-size: 20px;
+  line-height: 31px;
+  color: #E9F7FE;
+}
+
+/* line 107, src/scss/_components/common/_footer.scss */
+.footer__sign {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/* line 111, src/scss/_components/common/_footer.scss */
+.footer__sign p {
+  padding-right: 20px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  color: #FFFFFF;
+}
+
+/* line 119, src/scss/_components/common/_footer.scss */
+.footer__sign-btn {
+  outline: none;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: auto;
+  height: 48px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border: 2px solid #FFFFFF;
+  -webkit-border-radius: 45px;
+          border-radius: 45px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background-color: transparent;
+}
+
+/* line 133, src/scss/_components/common/_footer.scss */
+.footer__sign-btn:hover {
+  background-color: #ffffff;
+}
+
+/* line 136, src/scss/_components/common/_footer.scss */
+.footer__sign-btn:hover .icon-font,
+.footer__sign-btn:hover span {
+  color: #00CAAD;
+}
+
+/* line 142, src/scss/_components/common/_footer.scss */
+.footer__sign-btn .icon-font,
+.footer__sign-btn span {
+  color: #ffffff;
+}
+
+/* line 147, src/scss/_components/common/_footer.scss */
+.footer__sign-btn .icon-font {
+  font-size: 24px;
+}
+
+/* line 150, src/scss/_components/common/_footer.scss */
+.footer__sign-btn .icon-font + span {
+  padding-left: 10px;
+}
+
+/* line 155, src/scss/_components/common/_footer.scss */
+.footer__sign-btn span {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
 }
 
 /*# sourceMappingURL=maps/app.css.map */
