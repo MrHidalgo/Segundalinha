@@ -162,7 +162,7 @@
 }
 
 /* line 23, src/scss/_generated/_spriteFont.scss */
-.icon-android:before, .icon-apple:before, .icon-facebook:before, .icon-global:before, .icon-instagram:before, .icon-ios:before, .icon-twitter:before, .icon-user:before, .icon-windows:before, .icon-youtube:before {
+.icon-android:before, .icon-apple:before, .icon-appointment:before, .icon-conversation:before, .icon-crm:before, .icon-cubes:before, .icon-emoticons:before, .icon-facebook:before, .icon-global:before, .icon-instagram:before, .icon-ios:before, .icon-responsive-design:before, .icon-sim-card:before, .icon-technical-support:before, .icon-twitter:before, .icon-user:before, .icon-windows:before, .icon-youtube:before {
   font-family: "iconFont", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -173,54 +173,94 @@
   text-transform: none;
 }
 
-/* line 65, src/scss/_generated/_spriteFont.scss */
+/* line 89, src/scss/_generated/_spriteFont.scss */
 .icon-android:before {
   content: "";
 }
 
-/* line 65, src/scss/_generated/_spriteFont.scss */
+/* line 89, src/scss/_generated/_spriteFont.scss */
 .icon-apple:before {
   content: "";
 }
 
-/* line 65, src/scss/_generated/_spriteFont.scss */
-.icon-facebook:before {
+/* line 89, src/scss/_generated/_spriteFont.scss */
+.icon-appointment:before {
   content: "";
 }
 
-/* line 65, src/scss/_generated/_spriteFont.scss */
-.icon-global:before {
+/* line 89, src/scss/_generated/_spriteFont.scss */
+.icon-conversation:before {
   content: "";
 }
 
-/* line 65, src/scss/_generated/_spriteFont.scss */
-.icon-instagram:before {
+/* line 89, src/scss/_generated/_spriteFont.scss */
+.icon-crm:before {
   content: "";
 }
 
-/* line 65, src/scss/_generated/_spriteFont.scss */
-.icon-ios:before {
+/* line 89, src/scss/_generated/_spriteFont.scss */
+.icon-cubes:before {
   content: "";
 }
 
-/* line 65, src/scss/_generated/_spriteFont.scss */
-.icon-twitter:before {
+/* line 89, src/scss/_generated/_spriteFont.scss */
+.icon-emoticons:before {
   content: "";
 }
 
-/* line 65, src/scss/_generated/_spriteFont.scss */
-.icon-user:before {
+/* line 89, src/scss/_generated/_spriteFont.scss */
+.icon-facebook:before {
   content: "";
 }
 
-/* line 65, src/scss/_generated/_spriteFont.scss */
-.icon-windows:before {
+/* line 89, src/scss/_generated/_spriteFont.scss */
+.icon-global:before {
   content: "";
 }
 
-/* line 65, src/scss/_generated/_spriteFont.scss */
-.icon-youtube:before {
+/* line 89, src/scss/_generated/_spriteFont.scss */
+.icon-instagram:before {
   content: "";
+}
+
+/* line 89, src/scss/_generated/_spriteFont.scss */
+.icon-ios:before {
+  content: "";
+}
+
+/* line 89, src/scss/_generated/_spriteFont.scss */
+.icon-responsive-design:before {
+  content: "";
+}
+
+/* line 89, src/scss/_generated/_spriteFont.scss */
+.icon-sim-card:before {
+  content: "";
+}
+
+/* line 89, src/scss/_generated/_spriteFont.scss */
+.icon-technical-support:before {
+  content: "";
+}
+
+/* line 89, src/scss/_generated/_spriteFont.scss */
+.icon-twitter:before {
+  content: "";
+}
+
+/* line 89, src/scss/_generated/_spriteFont.scss */
+.icon-user:before {
+  content: "";
+}
+
+/* line 89, src/scss/_generated/_spriteFont.scss */
+.icon-windows:before {
+  content: "";
+}
+
+/* line 89, src/scss/_generated/_spriteFont.scss */
+.icon-youtube:before {
+  content: "";
 }
 
 /* line 1, src/scss/_shared/_main-setting-reset.scss */
@@ -1581,6 +1621,124 @@ picture {
   font-weight: 500;
   font-size: 18px;
   line-height: 27px;
+}
+
+/* line 3, src/scss/_components/homepage/_more.scss */
+.more {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+/* line 7, src/scss/_components/homepage/_more.scss */
+.more__title {
+  padding-bottom: 15px;
+  font-weight: bold;
+  font-size: 45px;
+  line-height: 67px;
+  color: #00CAAD;
+  text-align: center;
+}
+
+/* line 16, src/scss/_components/homepage/_more.scss */
+.more__desc {
+  width: 100%;
+  max-width: 1295px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 88px;
+  font-size: 28px;
+  line-height: 42px;
+  text-align: center;
+  color: #aeaeae;
+}
+
+/* line 28, src/scss/_components/homepage/_more.scss */
+.more__box {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+/* line 32, src/scss/_components/homepage/_more.scss */
+.more__box-wrapper {
+  position: relative;
+  left: -90px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  width: -webkit-calc(100% + 90px);
+  width: calc(100% + 90px);
+}
+
+/* line 39, src/scss/_components/homepage/_more.scss */
+.more__box-wrapper > div {
+  width: 100%;
+  max-width: -webkit-calc(100% / 4);
+  max-width: calc(100% / 4);
+  padding-left: 90px;
+  padding-bottom: 100px;
+}
+
+/* line 47, src/scss/_components/homepage/_more.scss */
+.more__box-head {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 63px;
+  height: 63px;
+  -webkit-border-radius: 6.07526px;
+          border-radius: 6.07526px;
+  -webkit-box-shadow: 0 11.3911px 17.4664px rgba(0, 202, 173, 0.18);
+          box-shadow: 0 11.3911px 17.4664px rgba(0, 202, 173, 0.18);
+  background: -webkit-linear-gradient(296.72deg, #00CAAD -3.1%, #7168ED 83.26%), -webkit-linear-gradient(top, #FF77A0 0%, #8770FD 100%), #C4C4C4;
+  background: -o-linear-gradient(296.72deg, #00CAAD -3.1%, #7168ED 83.26%), -o-linear-gradient(top, #FF77A0 0%, #8770FD 100%), #C4C4C4;
+  background: linear-gradient(153.28deg, #00CAAD -3.1%, #7168ED 83.26%), linear-gradient(180deg, #FF77A0 0%, #8770FD 100%), #C4C4C4;
+}
+
+/* line 57, src/scss/_components/homepage/_more.scss */
+.more__box-head .icon-font {
+  font-size: 32px;
+}
+
+/* line 62, src/scss/_components/homepage/_more.scss */
+.more__box-body {
+  padding-top: 25px;
+}
+
+/* line 65, src/scss/_components/homepage/_more.scss */
+.more__box-body p {
+  min-height: 85px;
+  padding-bottom: 20px;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 32px;
+  color: #FFFFFF;
+}
+
+/* line 74, src/scss/_components/homepage/_more.scss */
+.more__box-body span {
+  font-size: 17px;
+  line-height: 25px;
+  color: #A6A6A6;
 }
 
 /* line 3, src/scss/_components/homepage/_developer.scss */

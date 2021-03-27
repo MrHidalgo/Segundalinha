@@ -33,29 +33,53 @@
 	@if $filename == apple {
 		$char: "\E002";
 	}
-	@if $filename == facebook {
+	@if $filename == appointment {
 		$char: "\E003";
 	}
-	@if $filename == global {
+	@if $filename == conversation {
 		$char: "\E004";
 	}
-	@if $filename == instagram {
+	@if $filename == crm {
 		$char: "\E005";
 	}
-	@if $filename == ios {
+	@if $filename == cubes {
 		$char: "\E006";
 	}
-	@if $filename == twitter {
+	@if $filename == emoticons {
 		$char: "\E007";
 	}
-	@if $filename == user {
+	@if $filename == facebook {
 		$char: "\E008";
 	}
-	@if $filename == windows {
+	@if $filename == global {
 		$char: "\E009";
 	}
-	@if $filename == youtube {
+	@if $filename == instagram {
 		$char: "\E00A";
+	}
+	@if $filename == ios {
+		$char: "\E00B";
+	}
+	@if $filename == responsive-design {
+		$char: "\E00C";
+	}
+	@if $filename == sim-card {
+		$char: "\E00D";
+	}
+	@if $filename == technical-support {
+		$char: "\E00E";
+	}
+	@if $filename == twitter {
+		$char: "\E00F";
+	}
+	@if $filename == user {
+		$char: "\E010";
+	}
+	@if $filename == windows {
+		$char: "\E011";
+	}
+	@if $filename == youtube {
+		$char: "\E012";
 	}
 
 	@return $char;
@@ -80,6 +104,26 @@
 	@include icon(apple);
 
 }
+.icon-appointment {
+	@include icon(appointment);
+
+}
+.icon-conversation {
+	@include icon(conversation);
+
+}
+.icon-crm {
+	@include icon(crm);
+
+}
+.icon-cubes {
+	@include icon(cubes);
+
+}
+.icon-emoticons {
+	@include icon(emoticons);
+
+}
 .icon-facebook {
 	@include icon(facebook);
 
@@ -94,6 +138,18 @@
 }
 .icon-ios {
 	@include icon(ios);
+
+}
+.icon-responsive-design {
+	@include icon(responsive-design);
+
+}
+.icon-sim-card {
+	@include icon(sim-card);
+
+}
+.icon-technical-support {
+	@include icon(technical-support);
 
 }
 .icon-twitter {
