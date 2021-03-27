@@ -1623,6 +1623,29 @@ picture {
   line-height: 27px;
 }
 
+/* line 3, src/scss/_components/homepage/_main.scss */
+.main {
+  padding-top: 208px;
+}
+
+/* line 6, src/scss/_components/homepage/_main.scss */
+.main__title {
+  font-weight: bold;
+  font-size: 45px;
+  line-height: 67px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+/* line 14, src/scss/_components/homepage/_main.scss */
+.main__slogan {
+  padding-bottom: 25px;
+  font-size: 28px;
+  line-height: 42px;
+  text-align: center;
+  color: #AEAEAE;
+}
+
 /* line 3, src/scss/_components/homepage/_more.scss */
 .more {
   padding-top: 100px;
