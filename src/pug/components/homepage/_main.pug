@@ -2,24 +2,24 @@
 
 section#main.main
 
-  .main__bg(parallax-js)
-    div(data-stellar-ratio="0.85")
+  .main__bg
+    div
       img(src="img/visual-about-1.png" srcset="img/visual-about-1@2x.png 2x" alt="" floating-node-js)
-    div(data-stellar-ratio="0.8")
+    div
       img(src="img/visual-about-3.svg" alt="" floating-node-js)
     div
 
   .c-grid
     .main__wrapper
 
-      h1.main__title Seu telefone profissional, reiventado!
-      p.main__slogan Uma nova forma de se comunicar com clientes, colaboradores e parceiros.
+      h1.main__title(data-aos="fade-up" data-aos-easing="ease-in-out") Seu telefone profissional, reiventado!
+      p.main__slogan(data-aos="fade-up" data-aos-delay="100" data-aos-easing="ease-in-out") Uma nova forma de se comunicar com clientes, colaboradores e parceiros.
 
-      .main__btn.c-btn__wrapper.c-btn__wrapper--center
+      .main__btn.c-btn__wrapper.c-btn__wrapper--center(data-aos="fade-up" data-aos-delay="150" data-aos-easing="ease-in-out")
         a.c-btn(href="#")
           span Cadastre-se na SegundaLinha
 
-  .main__visual-wrapper
+  .main__visual-wrapper(data-aos="fade-up" data-aos-delay="100" data-aos-easing="ease-in-out")
     .main__visual(parallax-js)
       div
         img.main__visual-device.main__visual-device--clone(data-stellar-ratio="1.05" src="img/img-main-device-clone.png" srcset="img/img-main-device-clone@2x.png 2x" alt="")

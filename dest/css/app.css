@@ -2478,6 +2478,262 @@ picture {
   color: #959595;
 }
 
+/* line 3, src/scss/_components/homepage/_connect.scss */
+.connect {
+  position: relative;
+  padding-top: 100px;
+  padding-bottom: 200px;
+}
+
+/* line 8, src/scss/_components/homepage/_connect.scss */
+.connect__bg {
+  z-index: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 16, src/scss/_components/homepage/_connect.scss */
+.connect__bg > div {
+  position: absolute;
+}
+
+/* line 19, src/scss/_components/homepage/_connect.scss */
+.connect__bg > div:nth-of-type(1) {
+  top: -50px;
+  left: 10%;
+}
+
+/* line 23, src/scss/_components/homepage/_connect.scss */
+.connect__bg > div:nth-of-type(2) {
+  top: 150px;
+  left: 25px;
+}
+
+/* line 27, src/scss/_components/homepage/_connect.scss */
+.connect__bg > div:nth-of-type(3) {
+  top: 100px;
+  left: 20%;
+}
+
+/* line 31, src/scss/_components/homepage/_connect.scss */
+.connect__bg > div:nth-of-type(4) {
+  top: 25px;
+  right: 125px;
+}
+
+/* line 37, src/scss/_components/homepage/_connect.scss */
+.connect__bg img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* line 44, src/scss/_components/homepage/_connect.scss */
+.connect__wrapper {
+  z-index: 2;
+  position: relative;
+  width: 100%;
+  max-width: 1366px;
+  padding-top: 80px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 53, src/scss/_components/homepage/_connect.scss */
+.connect__wrapper-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/img-connect-bg.svg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  -webkit-background-size: contain;
+          background-size: contain;
+}
+
+/* line 64, src/scss/_components/homepage/_connect.scss */
+.connect__wrapper-bg > div {
+  position: absolute;
+}
+
+/* line 67, src/scss/_components/homepage/_connect.scss */
+.connect__wrapper-bg > div:nth-of-type(1) {
+  top: 35%;
+  left: 110px;
+  width: 254px;
+  height: 243.5px;
+  -webkit-border-radius: 49px;
+          border-radius: 49px;
+  background-color: #1CB3BD;
+  -webkit-transform: matrix(0.92, -0.35, 0.4, 0.93, 0, 0);
+      -ms-transform: matrix(0.92, -0.35, 0.4, 0.93, 0, 0);
+          transform: matrix(0.92, -0.35, 0.4, 0.93, 0, 0);
+}
+
+/* line 76, src/scss/_components/homepage/_connect.scss */
+.connect__wrapper-bg > div:nth-of-type(2) {
+  opacity: 0.4;
+  top: 32%;
+  left: 896.48px;
+  width: 435.41px;
+  height: 417.4px;
+  -webkit-border-radius: 450px;
+          border-radius: 450px;
+  background-color: #4987E5;
+  -webkit-transform: matrix(0.92, -0.35, 0.4, 0.93, 0, 0);
+      -ms-transform: matrix(0.92, -0.35, 0.4, 0.93, 0, 0);
+          transform: matrix(0.92, -0.35, 0.4, 0.93, 0, 0);
+}
+
+/* line 86, src/scss/_components/homepage/_connect.scss */
+.connect__wrapper-bg > div:nth-of-type(3) {
+  opacity: 0.55;
+  position: absolute;
+  top: 200px;
+  right: 100px;
+}
+
+/* line 92, src/scss/_components/homepage/_connect.scss */
+.connect__wrapper-bg > div:nth-of-type(3) img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* line 101, src/scss/_components/homepage/_connect.scss */
+.connect__wrapper-content {
+  z-index: 2;
+  position: relative;
+}
+
+/* line 107, src/scss/_components/homepage/_connect.scss */
+.connect__title {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: bold;
+  font-size: 45px;
+  line-height: 67px;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 1023px) {
+  /* line 107, src/scss/_components/homepage/_connect.scss */
+  .connect__title {
+    font-size: 40px;
+  }
+}
+
+/* line 123, src/scss/_components/homepage/_connect.scss */
+.connect__title:before {
+  z-index: 0;
+  content: attr(data-title);
+  position: absolute;
+  top: -15px;
+  left: -275px;
+  right: -275px;
+  width: -webkit-calc(100% + 550px);
+  width: calc(100% + 550px);
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: bold;
+  text-align: center;
+  font-size: 77px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.08);
+}
+
+@media screen and (max-width: 1023px) {
+  /* line 123, src/scss/_components/homepage/_connect.scss */
+  .connect__title:before {
+    font-size: 57px;
+  }
+}
+
+/* line 144, src/scss/_components/homepage/_connect.scss */
+.connect__desc {
+  width: 100%;
+  max-width: 710px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 75px;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+/* line 156, src/scss/_components/homepage/_connect.scss */
+.connect__visual {
+  position: relative;
+}
+
+/* line 159, src/scss/_components/homepage/_connect.scss */
+.connect__visual-badge {
+  position: absolute;
+  top: -45px;
+  left: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+/* line 169, src/scss/_components/homepage/_connect.scss */
+.connect__visual-badge > div:nth-of-type(1) {
+  -webkit-transform: translateX(-43px);
+      -ms-transform: translateX(-43px);
+          transform: translateX(-43px);
+}
+
+/* line 172, src/scss/_components/homepage/_connect.scss */
+.connect__visual-badge > div:nth-of-type(2) {
+  -webkit-transform: translateX(150px);
+      -ms-transform: translateX(150px);
+          transform: translateX(150px);
+}
+
+/* line 177, src/scss/_components/homepage/_connect.scss */
+.connect__visual-badge img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* line 184, src/scss/_components/homepage/_connect.scss */
+.connect__visual > img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 194, src/scss/_components/homepage/_connect.scss */
+.connect__btn .c-btn {
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
 /* line 3, src/scss/_components/download/_download.scss */
 .download {
   position: relative;
