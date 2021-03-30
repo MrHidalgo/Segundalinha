@@ -1,6 +1,14 @@
 // SECTION :: START
 
 section#main.main
+
+  .main__bg(parallax-js)
+    div(data-stellar-ratio="0.85")
+      img(src="img/visual-about-1.png" srcset="img/visual-about-1@2x.png 2x" alt="" floating-node-js)
+    div(data-stellar-ratio="0.8")
+      img(src="img/visual-about-3.svg" alt="" floating-node-js)
+    div
+
   .c-grid
     .main__wrapper
 
@@ -10,5 +18,19 @@ section#main.main
       .main__btn.c-btn__wrapper.c-btn__wrapper--center
         a.c-btn(href="#")
           span Cadastre-se na SegundaLinha
+
+  .main__visual-wrapper
+    .main__visual(parallax-js)
+      div
+        img.main__visual-device.main__visual-device--clone(data-stellar-ratio="1.05" src="img/img-main-device-clone.png" srcset="img/img-main-device-clone@2x.png 2x" alt="")
+        img.main__visual-cube.main__visual-cube--big(floating-node-js src="img/img-main-cube-big.png" srcset="img/img-main-cube-big@2x.png 2x" alt="")
+        img.main__visual-dots(data-stellar-ratio="0.9" src="img/img-main-dots.svg" alt="")
+        img.main__visual-orb.main__visual-orb--small(floating-node-js src="img/img-main-orb-small.png" srcset="img/img-main-orb-small@2x.png 2x" alt="")
+      div
+        img.main__visual-device(data-stellar-ratio="0.95" src="img/img-main-device.png" srcset="img/img-main-device@2x.png 2x" alt="")
+      div
+        img.main__visual-orb.main__visual-orb--big(floating-node-js src="img/img-main-orb-big.png" srcset="img/img-main-orb-big@2x.png 2x" alt="")
+        img.main__visual-cube.main__visual-cube--small(floating-node-js src="img/img-main-cube-small.png" srcset="img/img-main-cube-small@2x.png 2x" alt="")
+        img.main__visual-phone(data-stellar-ratio="1.15" src="img/img-main-phone.png" srcset="img/img-main-phone@2x.png 2x" alt="")
 
 // SECTION :: END

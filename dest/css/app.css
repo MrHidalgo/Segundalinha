@@ -1653,10 +1653,74 @@ picture {
 
 /* line 3, src/scss/_components/homepage/_main.scss */
 .main {
+  position: relative;
   padding-top: 208px;
 }
 
-/* line 6, src/scss/_components/homepage/_main.scss */
+/* line 7, src/scss/_components/homepage/_main.scss */
+.main__bg {
+  z-index: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 15, src/scss/_components/homepage/_main.scss */
+.main__bg > div {
+  position: absolute;
+}
+
+/* line 18, src/scss/_components/homepage/_main.scss */
+.main__bg > div:nth-of-type(1) {
+  top: 30%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: -50px;
+}
+
+/* line 23, src/scss/_components/homepage/_main.scss */
+.main__bg > div:nth-of-type(1) img {
+  display: block;
+  max-width: 137px;
+  height: auto;
+  -webkit-filter: drop-shadow(-1px 33px 48px rgba(128, 119, 242, 0.52));
+          filter: drop-shadow(-1px 33px 48px rgba(128, 119, 242, 0.52));
+}
+
+/* line 31, src/scss/_components/homepage/_main.scss */
+.main__bg > div:nth-of-type(2) {
+  top: 100px;
+  right: -50px;
+}
+
+/* line 36, src/scss/_components/homepage/_main.scss */
+.main__bg > div:nth-of-type(3) {
+  opacity: 0.55;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 400px;
+  height: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  background-color: rgba(156, 96, 255, 0.6);
+  -webkit-filter: blur(100px);
+          filter: blur(100px);
+}
+
+/* line 53, src/scss/_components/homepage/_main.scss */
+.main__wrapper {
+  z-index: 5;
+  position: relative;
+}
+
+/* line 58, src/scss/_components/homepage/_main.scss */
 .main__title {
   font-weight: bold;
   font-size: 45px;
@@ -1665,13 +1729,123 @@ picture {
   color: #FFFFFF;
 }
 
-/* line 14, src/scss/_components/homepage/_main.scss */
+/* line 66, src/scss/_components/homepage/_main.scss */
 .main__slogan {
   padding-bottom: 25px;
   font-size: 28px;
   line-height: 42px;
   text-align: center;
   color: #AEAEAE;
+}
+
+/* line 74, src/scss/_components/homepage/_main.scss */
+.main__btn {
+  padding-bottom: 80px;
+}
+
+/* line 78, src/scss/_components/homepage/_main.scss */
+.main__visual {
+  z-index: 2;
+  position: relative;
+}
+
+/* line 82, src/scss/_components/homepage/_main.scss */
+.main__visual-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+/* line 88, src/scss/_components/homepage/_main.scss */
+.main__visual-device--clone {
+  opacity: 0.4;
+  -webkit-filter: contrast(0.5);
+          filter: contrast(0.5);
+  position: absolute;
+  top: -150px;
+  left: 160px;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 101, src/scss/_components/homepage/_main.scss */
+.main__visual-cube--big {
+  position: absolute;
+  top: 100px;
+  left: 25px;
+}
+
+/* line 106, src/scss/_components/homepage/_main.scss */
+.main__visual-cube--small {
+  position: absolute;
+  left: 300px;
+  bottom: 200px;
+}
+
+/* line 113, src/scss/_components/homepage/_main.scss */
+.main__visual-dots {
+  position: absolute;
+  bottom: 200px;
+  right: 200px;
+}
+
+/* line 120, src/scss/_components/homepage/_main.scss */
+.main__visual-orb--small {
+  position: absolute;
+  top: 40%;
+  right: 100px;
+}
+
+/* line 125, src/scss/_components/homepage/_main.scss */
+.main__visual-orb--big {
+  position: absolute;
+  top: 170px;
+  left: 165px;
+}
+
+/* line 132, src/scss/_components/homepage/_main.scss */
+.main__visual-phone {
+  position: absolute;
+  top: 115px;
+  right: 290px;
+}
+
+/* line 139, src/scss/_components/homepage/_main.scss */
+.main__visual > div:nth-of-type(1), .main__visual > div:nth-of-type(3) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 148, src/scss/_components/homepage/_main.scss */
+.main__visual > div:nth-of-type(1) {
+  z-index: 1;
+}
+
+/* line 151, src/scss/_components/homepage/_main.scss */
+.main__visual > div:nth-of-type(2) {
+  position: relative;
+  z-index: 2;
+}
+
+/* line 155, src/scss/_components/homepage/_main.scss */
+.main__visual > div:nth-of-type(3) {
+  z-index: 3;
+}
+
+/* line 160, src/scss/_components/homepage/_main.scss */
+.main__visual img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 /* line 3, src/scss/_components/homepage/_how.scss */
