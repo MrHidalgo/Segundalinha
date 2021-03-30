@@ -4,6 +4,9 @@
 	position: relative;
 	padding-top: 100px;
 	padding-bottom: 100px;
+	@include adaptive(1279) {
+		padding-bottom: 50px;
+	}
 
 	&__bg {
 		z-index: 0;
@@ -19,6 +22,9 @@
 			&:nth-of-type(1) {
 				top: -100px;
 				left: -200px;
+				@include adaptive(1279) {
+					display: none !important;
+				}
 			}
 			&:nth-of-type(2) {
 				top: 50px;
@@ -43,6 +49,9 @@
 		line-height: 67px;
 		color: #00CAAD;
 		text-align: center;
+		@include adaptive(1279) {
+			font-size: 40px;
+		}
 	}
 
 	&__desc {
@@ -55,6 +64,9 @@
 		line-height: 42px;
 		text-align: center;
 		color: #aeaeae;
+		@include adaptive(1279) {
+			font-size: 24px;
+		}
 	}
 
 	&__box {
@@ -116,6 +128,9 @@
 				width: 100%;
 				max-width: calc((100% - 150px) / 3);
 				padding-bottom: 50px;
+				@include adaptive(1023) {
+					max-width: 100%;
+				}
 			}
 		}
 
@@ -125,6 +140,12 @@
 			align-items: center;
 			justify-content: center;
 			min-height: 550px;
+			@include adaptive(1279) {
+				height: 450px;
+			}
+			@include adaptive(1023) {
+				height: auto;
+			}
 
 			img {
 				z-index: 2;
@@ -146,6 +167,9 @@
 			line-height: 42px;
 			text-align: center;
 			color: #E5E5E5;
+			@include adaptive(1279) {
+				font-size: 24px;
+			}
 		}
 
 		&-line {
@@ -163,6 +187,9 @@
 			line-height: 24px;
 			text-align: center;
 			color: #959595;
+			@include adaptive(1279) {
+				display: none !important;
+			}
 		}
 	}
 

@@ -4,6 +4,9 @@
 	position: relative;
 	padding-top: 100px;
 	padding-bottom: 200px;
+	@include adaptive(1279) {
+		padding-bottom: 150px;
+	}
 
 	&__bg {
 		z-index: 0;
@@ -27,6 +30,9 @@
 			&:nth-of-type(3) {
 				top: 100px;
 				left: 20%;
+				@include adaptive(1023) {
+					display: none !important;
+				}
 			}
 			&:nth-of-type(4) {
 				top: 25px;
@@ -72,6 +78,9 @@
 					border-radius: 49px;
 					background-color: #1CB3BD;
 					transform: matrix(0.92, -0.35, 0.4, 0.93, 0, 0);
+					@include adaptive(1023) {
+						display: none !important;
+					}
 				}
 				&:nth-of-type(2) {
 					opacity: 0.4;
@@ -82,6 +91,9 @@
 					border-radius: 450px;
 					background-color: #4987E5;
 					transform: matrix(0.92, -0.35, 0.4, 0.93, 0, 0);
+					@include adaptive(1023) {
+						display: none !important;
+					}
 				}
 				&:nth-of-type(3) {
 					opacity: 0.55;
@@ -116,7 +128,7 @@
 		text-align: center;
 		color: #fff;
 		text-transform: uppercase;
-		@include adaptive(1023) {
+		@include adaptive(1279) {
 			font-size: 40px;
 		}
 
@@ -135,7 +147,7 @@
 			font-size: 77px;
 			text-transform: uppercase;
 			color: rgba(#FFFFFF, 0.08);
-			@include adaptive(1023) {
+			@include adaptive(1279) {
 				font-size: 57px;
 			}
 		}
@@ -164,6 +176,9 @@
 			align-items: flex-start;
 			justify-content: space-between;
 			width: 100%;
+			@include adaptive(1279) {
+				display: none;
+			}
 
 			> div {
 				&:nth-of-type(1) {

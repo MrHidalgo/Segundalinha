@@ -17,6 +17,9 @@
 			position: absolute;
 			right: 0;
 			bottom: 15%;
+			@include adaptive(1279) {
+				right: -50px;
+			}
 		}
 	}
 
@@ -32,6 +35,9 @@
 		line-height: 67px;
 		color: #00CAAD;
 		text-align: center;
+		@include adaptive(1279) {
+			font-size: 40px;
+		}
 	}
 
 	&__desc {
@@ -44,6 +50,9 @@
 		line-height: 42px;
 		text-align: center;
 		color: #aeaeae;
+		@include adaptive(1279) {
+			font-size: 24px;
+		}
 	}
 
 	&__box {
@@ -56,12 +65,23 @@
 			display: flex;
 			flex-wrap: wrap;
 			width: calc(100% + 90px);
+			@include adaptive(1279) {
+				left: -30px;
+				width: calc(100% + 30px);
+			}
 
 			> div {
 				width: 100%;
 				max-width: calc(100% / 4);
 				padding-left: 90px;
 				padding-bottom: 100px;
+				@include adaptive(1279) {
+					padding-left: 30px;
+					padding-bottom: 75px;
+				}
+				@include adaptive(1023) {
+					max-width: calc(100% / 3);
+				}
 			}
 		}
 
@@ -90,12 +110,18 @@
 				font-size: 22px;
 				line-height: 32px;
 				color: #FFFFFF;
+				@include adaptive(1279) {
+					font-size: 20px;
+				}
 			}
 
 			span {
 				font-size: 17px;
 				line-height: 25px;
 				color: #A6A6A6;
+				@include adaptive(1279) {
+					font-size: 16px;
+				}
 			}
 		}
 	}
