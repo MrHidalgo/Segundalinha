@@ -1,4 +1,17 @@
 @charset "UTF-8";
+/* line 14, src/scss/_utilities/_extend.scss */
+.team__box-head > div img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
 /*!
  * Hamburgers
  * @description Tasty CSS-animated hamburgers
@@ -2516,6 +2529,229 @@ picture {
   line-height: 25px;
   text-align: center;
   color: #A6A6A6;
+}
+
+/* line 3, src/scss/_components/team/_team.scss */
+.team {
+  position: relative;
+  padding-top: 65px;
+  padding-bottom: 50px;
+}
+
+/* line 8, src/scss/_components/team/_team.scss */
+.team__bg {
+  z-index: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 16, src/scss/_components/team/_team.scss */
+.team__bg > div {
+  position: absolute;
+}
+
+/* line 19, src/scss/_components/team/_team.scss */
+.team__bg > div:nth-of-type(1) {
+  top: 30%;
+  left: 50px;
+}
+
+/* line 23, src/scss/_components/team/_team.scss */
+.team__bg > div:nth-of-type(2) {
+  top: 25%;
+  right: -50px;
+}
+
+/* line 27, src/scss/_components/team/_team.scss */
+.team__bg > div:nth-of-type(3) {
+  right: -225px;
+  bottom: -75px;
+}
+
+/* line 34, src/scss/_components/team/_team.scss */
+.team__wrapper {
+  z-index: 2;
+  position: relative;
+}
+
+/* line 39, src/scss/_components/team/_team.scss */
+.team__title {
+  position: relative;
+  padding-bottom: 45px;
+  font-weight: bold;
+  font-size: 45px;
+  line-height: 67px;
+  text-align: center;
+  color: #00caad;
+  text-transform: uppercase;
+}
+
+/* line 49, src/scss/_components/team/_team.scss */
+.team__title:before {
+  z-index: 0;
+  content: attr(data-title);
+  position: absolute;
+  top: -15px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: bold;
+  text-align: center;
+  font-size: 77px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.08);
+}
+
+/* line 66, src/scss/_components/team/_team.scss */
+.team__box {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+/* line 71, src/scss/_components/team/_team.scss */
+.team__box-bg {
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 79, src/scss/_components/team/_team.scss */
+.team__box-bg > div {
+  position: absolute;
+}
+
+/* line 82, src/scss/_components/team/_team.scss */
+.team__box-bg > div:nth-of-type(1) {
+  top: 155px;
+  left: -60px;
+}
+
+/* line 86, src/scss/_components/team/_team.scss */
+.team__box-bg > div:nth-of-type(1) img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* line 92, src/scss/_components/team/_team.scss */
+.team__box-bg > div:nth-of-type(2) {
+  top: 80px;
+  right: -40px;
+  width: 210px;
+  height: 210px;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  background-color: rgba(156, 96, 255, 0.3);
+  -webkit-filter: blur(65px);
+          filter: blur(65px);
+}
+
+/* line 104, src/scss/_components/team/_team.scss */
+.team__box-wrapper {
+  position: relative;
+  left: -150px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  width: -webkit-calc(100% + 150px);
+  width: calc(100% + 150px);
+}
+
+/* line 111, src/scss/_components/team/_team.scss */
+.team__box-wrapper > div {
+  width: 100%;
+  max-width: -webkit-calc(100% / 3);
+  max-width: calc(100% / 3);
+  padding-left: 150px;
+  padding-bottom: 70px;
+}
+
+/* line 119, src/scss/_components/team/_team.scss */
+.team__box-head {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 350px;
+  height: 350px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 15px;
+  border: 1px solid #6B5CF6;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+}
+
+/* line 131, src/scss/_components/team/_team.scss */
+.team__box-head > div {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  background-color: #6b5cf6;
+}
+
+/* line 145, src/scss/_components/team/_team.scss */
+.team__box-body {
+  padding-top: 35px;
+}
+
+/* line 148, src/scss/_components/team/_team.scss */
+.team__box-body p,
+.team__box-body span {
+  text-align: center;
+}
+
+/* line 153, src/scss/_components/team/_team.scss */
+.team__box-body p {
+  font-weight: 500;
+  font-size: 29px;
+  line-height: 38px;
+  color: #FFFFFF;
+}
+
+/* line 160, src/scss/_components/team/_team.scss */
+.team__box-body span {
+  display: block;
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 38px;
+  text-align: center;
+  color: #838383;
+}
+
+/* line 3, src/scss/_components/team/_faq.scss */
+.faq {
+  padding-top: 50px;
 }
 
 /*# sourceMappingURL=maps/app.css.map */
