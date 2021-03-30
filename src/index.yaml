@@ -6,7 +6,7 @@ PageList:
   ready: 1
 - file: team.html
   titleName: My Team
-  ready: 1
+  ready: 55
 - file: download.html
   titleName: Download
   ready: 55

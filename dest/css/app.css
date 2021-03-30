@@ -2433,7 +2433,14 @@ picture {
   color: #FFFFFF;
 }
 
-/* line 53, src/scss/_components/team/_future.scss */
+@media screen and (max-width: 1023px) {
+  /* line 44, src/scss/_components/team/_future.scss */
+  .future__title {
+    font-size: 40px;
+  }
+}
+
+/* line 56, src/scss/_components/team/_future.scss */
 .future__desc {
   width: 100%;
   max-width: 938px;
@@ -2446,7 +2453,14 @@ picture {
   color: #AEAEAE;
 }
 
-/* line 65, src/scss/_components/team/_future.scss */
+@media screen and (max-width: 1023px) {
+  /* line 56, src/scss/_components/team/_future.scss */
+  .future__desc {
+    font-size: 24px;
+  }
+}
+
+/* line 71, src/scss/_components/team/_future.scss */
 .future__box {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2459,7 +2473,7 @@ picture {
           flex-direction: column;
 }
 
-/* line 69, src/scss/_components/team/_future.scss */
+/* line 75, src/scss/_components/team/_future.scss */
 .future__box-wrapper {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2474,14 +2488,38 @@ picture {
           justify-content: space-between;
 }
 
-/* line 74, src/scss/_components/team/_future.scss */
+/* line 80, src/scss/_components/team/_future.scss */
 .future__box-wrapper > div {
   width: 100%;
   max-width: -webkit-calc((100% - 280px) / 3);
   max-width: calc((100% - 280px) / 3);
 }
 
-/* line 80, src/scss/_components/team/_future.scss */
+@media screen and (max-width: 1439px) {
+  /* line 80, src/scss/_components/team/_future.scss */
+  .future__box-wrapper > div {
+    max-width: -webkit-calc((100% - 160px) / 3);
+    max-width: calc((100% - 160px) / 3);
+  }
+}
+
+@media screen and (max-width: 1279px) {
+  /* line 80, src/scss/_components/team/_future.scss */
+  .future__box-wrapper > div {
+    max-width: -webkit-calc((100% - 100px) / 3);
+    max-width: calc((100% - 100px) / 3);
+  }
+}
+
+@media screen and (max-width: 1279px) {
+  /* line 80, src/scss/_components/team/_future.scss */
+  .future__box-wrapper > div {
+    max-width: -webkit-calc((100% - 50px) / 3);
+    max-width: calc((100% - 50px) / 3);
+  }
+}
+
+/* line 95, src/scss/_components/team/_future.scss */
 .future__box-head {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2506,18 +2544,48 @@ picture {
   background: linear-gradient(153.28deg, #00CAAD -3.1%, #7168ED 83.26%), #C4C4C4;
 }
 
-/* line 91, src/scss/_components/team/_future.scss */
+@media screen and (max-width: 1365px) {
+  /* line 95, src/scss/_components/team/_future.scss */
+  .future__box-head {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  /* line 95, src/scss/_components/team/_future.scss */
+  .future__box-head {
+    width: 90px;
+    height: 90px;
+  }
+}
+
+/* line 114, src/scss/_components/team/_future.scss */
 .future__box-head .icon-font {
   color: #ffffff;
   font-size: 71px;
 }
 
-/* line 97, src/scss/_components/team/_future.scss */
+@media screen and (max-width: 1365px) {
+  /* line 114, src/scss/_components/team/_future.scss */
+  .future__box-head .icon-font {
+    font-size: 55px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  /* line 114, src/scss/_components/team/_future.scss */
+  .future__box-head .icon-font {
+    font-size: 45px;
+  }
+}
+
+/* line 126, src/scss/_components/team/_future.scss */
 .future__box-body {
   padding-top: 25px;
 }
 
-/* line 100, src/scss/_components/team/_future.scss */
+/* line 129, src/scss/_components/team/_future.scss */
 .future__box-body p {
   padding-bottom: 10px;
   font-weight: 600;
@@ -2527,13 +2595,27 @@ picture {
   color: #FFFFFF;
 }
 
-/* line 109, src/scss/_components/team/_future.scss */
+@media screen and (max-width: 1023px) {
+  /* line 129, src/scss/_components/team/_future.scss */
+  .future__box-body p {
+    font-size: 20px;
+  }
+}
+
+/* line 141, src/scss/_components/team/_future.scss */
 .future__box-body span {
   display: block;
   font-size: 15px;
   line-height: 25px;
   text-align: center;
   color: #A6A6A6;
+}
+
+@media screen and (max-width: 1023px) {
+  /* line 141, src/scss/_components/team/_future.scss */
+  .future__box-body span {
+    font-size: 14px;
+  }
 }
 
 /* line 3, src/scss/_components/team/_team.scss */
@@ -2594,7 +2676,14 @@ picture {
   text-transform: uppercase;
 }
 
-/* line 49, src/scss/_components/team/_team.scss */
+@media screen and (max-width: 1023px) {
+  /* line 39, src/scss/_components/team/_team.scss */
+  .team__title {
+    font-size: 40px;
+  }
+}
+
+/* line 52, src/scss/_components/team/_team.scss */
 .team__title:before {
   z-index: 0;
   content: attr(data-title);
@@ -2611,7 +2700,14 @@ picture {
   color: rgba(255, 255, 255, 0.08);
 }
 
-/* line 66, src/scss/_components/team/_team.scss */
+@media screen and (max-width: 1023px) {
+  /* line 52, src/scss/_components/team/_team.scss */
+  .team__title:before {
+    font-size: 57px;
+  }
+}
+
+/* line 72, src/scss/_components/team/_team.scss */
 .team__box {
   position: relative;
   display: -webkit-box;
@@ -2625,7 +2721,7 @@ picture {
           flex-direction: column;
 }
 
-/* line 71, src/scss/_components/team/_team.scss */
+/* line 77, src/scss/_components/team/_team.scss */
 .team__box-bg {
   z-index: -1;
   position: absolute;
@@ -2635,25 +2731,25 @@ picture {
   height: 100%;
 }
 
-/* line 79, src/scss/_components/team/_team.scss */
+/* line 85, src/scss/_components/team/_team.scss */
 .team__box-bg > div {
   position: absolute;
 }
 
-/* line 82, src/scss/_components/team/_team.scss */
+/* line 88, src/scss/_components/team/_team.scss */
 .team__box-bg > div:nth-of-type(1) {
-  top: 155px;
-  left: -60px;
+  top: 135px;
+  left: 0;
 }
 
-/* line 86, src/scss/_components/team/_team.scss */
+/* line 92, src/scss/_components/team/_team.scss */
 .team__box-bg > div:nth-of-type(1) img {
   display: block;
   max-width: 100%;
   height: auto;
 }
 
-/* line 92, src/scss/_components/team/_team.scss */
+/* line 98, src/scss/_components/team/_team.scss */
 .team__box-bg > div:nth-of-type(2) {
   top: 80px;
   right: -40px;
@@ -2666,10 +2762,9 @@ picture {
           filter: blur(65px);
 }
 
-/* line 104, src/scss/_components/team/_team.scss */
+/* line 110, src/scss/_components/team/_team.scss */
 .team__box-wrapper {
   position: relative;
-  left: -150px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2677,20 +2772,25 @@ picture {
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
-  width: -webkit-calc(100% + 150px);
-  width: calc(100% + 150px);
 }
 
-/* line 111, src/scss/_components/team/_team.scss */
+/* line 115, src/scss/_components/team/_team.scss */
 .team__box-wrapper > div {
   width: 100%;
   max-width: -webkit-calc(100% / 3);
   max-width: calc(100% / 3);
-  padding-left: 150px;
   padding-bottom: 70px;
 }
 
-/* line 119, src/scss/_components/team/_team.scss */
+@media screen and (max-width: 1023px) {
+  /* line 115, src/scss/_components/team/_team.scss */
+  .team__box-wrapper > div {
+    max-width: -webkit-calc(100% / 2);
+    max-width: calc(100% / 2);
+  }
+}
+
+/* line 125, src/scss/_components/team/_team.scss */
 .team__box-head {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2714,7 +2814,23 @@ picture {
           border-radius: 50%;
 }
 
-/* line 131, src/scss/_components/team/_team.scss */
+@media screen and (max-width: 1365px) {
+  /* line 125, src/scss/_components/team/_team.scss */
+  .team__box-head {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 1279px) {
+  /* line 125, src/scss/_components/team/_team.scss */
+  .team__box-head {
+    width: 275px;
+    height: 275px;
+  }
+}
+
+/* line 145, src/scss/_components/team/_team.scss */
 .team__box-head > div {
   overflow: hidden;
   position: relative;
@@ -2725,18 +2841,18 @@ picture {
   background-color: #6b5cf6;
 }
 
-/* line 145, src/scss/_components/team/_team.scss */
+/* line 159, src/scss/_components/team/_team.scss */
 .team__box-body {
   padding-top: 35px;
 }
 
-/* line 148, src/scss/_components/team/_team.scss */
+/* line 162, src/scss/_components/team/_team.scss */
 .team__box-body p,
 .team__box-body span {
   text-align: center;
 }
 
-/* line 153, src/scss/_components/team/_team.scss */
+/* line 167, src/scss/_components/team/_team.scss */
 .team__box-body p {
   font-weight: 500;
   font-size: 29px;
@@ -2744,7 +2860,14 @@ picture {
   color: #FFFFFF;
 }
 
-/* line 160, src/scss/_components/team/_team.scss */
+@media screen and (max-width: 1279px) {
+  /* line 167, src/scss/_components/team/_team.scss */
+  .team__box-body p {
+    font-size: 25px;
+  }
+}
+
+/* line 177, src/scss/_components/team/_team.scss */
 .team__box-body span {
   display: block;
   font-weight: 500;
@@ -2752,6 +2875,13 @@ picture {
   line-height: 38px;
   text-align: center;
   color: #838383;
+}
+
+@media screen and (max-width: 1279px) {
+  /* line 177, src/scss/_components/team/_team.scss */
+  .team__box-body span {
+    font-size: 18px;
+  }
 }
 
 /* line 3, src/scss/_components/team/_faq.scss */
