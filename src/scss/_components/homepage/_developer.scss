@@ -1,8 +1,40 @@
 // SECTION :: START
 
 .developer {
+	position: relative;
 	padding-top: 100px;
 	padding-bottom: 100px;
+
+	&__bg {
+		z-index: 0;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+
+		> div {
+			position: absolute;
+
+			&:nth-of-type(1) {
+				top: -100px;
+				left: -200px;
+			}
+			&:nth-of-type(2) {
+				top: 50px;
+				right: 100px;
+			}
+			&:nth-of-type(3) {
+				right: -75px;
+				bottom: 20%;
+			}
+		}
+	}
+
+	&__wrapper {
+		z-index: 2;
+		position: relative;
+	}
 
 	&__title {
 		padding-bottom: 15px;
@@ -26,34 +58,80 @@
 	}
 
 	&__box {
+		position: relative;
 		display: flex;
 		flex-direction: column;
+		min-height: 100%;
+
+		&.developer__box-1 {
+			.developer__box-bg {
+				> div {
+					left: 0;
+					bottom: 0;
+				}
+			}
+		}
+		&.developer__box-2 {
+			.developer__box-bg {
+				> div {
+					display: none;
+				}
+			}
+		}
+		&.developer__box-3 {
+			.developer__box-bg {
+				> div {
+					top: 30%;
+					right: 0;
+				}
+			}
+		}
+
+		&-bg {
+			z-index: 0;
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+
+			> div {
+				opacity: 0.75;
+				position: absolute;
+				width: 250px;
+				height: 250px;
+				border-radius: 50%;
+				background: rgba(#9815B2, 0.2);
+				filter: blur(75px);
+			}
+		}
 
 		&-wrapper {
 			position: relative;
-			//left: -100px;
 			display: flex;
 			flex-wrap: wrap;
-			//width: calc(100% + 100px);
+			justify-content: space-between;
 
 			> div {
 				width: 100%;
-				max-width: calc(100% / 3);
-				//padding-left: 100px;
+				max-width: calc((100% - 150px) / 3);
 				padding-bottom: 50px;
 			}
 		}
 
 		&-head {
+			position: relative;
 			display: flex;
-			align-items: flex-end;
+			align-items: center;
 			justify-content: center;
-			//height: 690px;
+			min-height: 550px;
 
 			img {
-				//display: block;
-				//max-width: 100%;
-				//height: auto;
+				z-index: 2;
+				position: relative;
+				display: block;
+				max-width: 100%;
+				height: auto;
 				margin-left: auto;
 				margin-right: auto;
 			}

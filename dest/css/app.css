@@ -2273,11 +2273,51 @@ picture {
 
 /* line 3, src/scss/_components/homepage/_developer.scss */
 .developer {
+  position: relative;
   padding-top: 100px;
   padding-bottom: 100px;
 }
 
-/* line 7, src/scss/_components/homepage/_developer.scss */
+/* line 8, src/scss/_components/homepage/_developer.scss */
+.developer__bg {
+  z-index: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 16, src/scss/_components/homepage/_developer.scss */
+.developer__bg > div {
+  position: absolute;
+}
+
+/* line 19, src/scss/_components/homepage/_developer.scss */
+.developer__bg > div:nth-of-type(1) {
+  top: -100px;
+  left: -200px;
+}
+
+/* line 23, src/scss/_components/homepage/_developer.scss */
+.developer__bg > div:nth-of-type(2) {
+  top: 50px;
+  right: 100px;
+}
+
+/* line 27, src/scss/_components/homepage/_developer.scss */
+.developer__bg > div:nth-of-type(3) {
+  right: -75px;
+  bottom: 20%;
+}
+
+/* line 34, src/scss/_components/homepage/_developer.scss */
+.developer__wrapper {
+  z-index: 2;
+  position: relative;
+}
+
+/* line 39, src/scss/_components/homepage/_developer.scss */
 .developer__title {
   padding-bottom: 15px;
   font-weight: bold;
@@ -2287,7 +2327,7 @@ picture {
   text-align: center;
 }
 
-/* line 16, src/scss/_components/homepage/_developer.scss */
+/* line 48, src/scss/_components/homepage/_developer.scss */
 .developer__desc {
   width: 100%;
   max-width: 828px;
@@ -2300,8 +2340,9 @@ picture {
   color: #aeaeae;
 }
 
-/* line 28, src/scss/_components/homepage/_developer.scss */
+/* line 60, src/scss/_components/homepage/_developer.scss */
 .developer__box {
+  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2311,9 +2352,50 @@ picture {
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
+  min-height: 100%;
 }
 
-/* line 32, src/scss/_components/homepage/_developer.scss */
+/* line 68, src/scss/_components/homepage/_developer.scss */
+.developer__box.developer__box-1 .developer__box-bg > div {
+  left: 0;
+  bottom: 0;
+}
+
+/* line 76, src/scss/_components/homepage/_developer.scss */
+.developer__box.developer__box-2 .developer__box-bg > div {
+  display: none;
+}
+
+/* line 83, src/scss/_components/homepage/_developer.scss */
+.developer__box.developer__box-3 .developer__box-bg > div {
+  top: 30%;
+  right: 0;
+}
+
+/* line 90, src/scss/_components/homepage/_developer.scss */
+.developer__box-bg {
+  z-index: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 98, src/scss/_components/homepage/_developer.scss */
+.developer__box-bg > div {
+  opacity: 0.75;
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  background: rgba(152, 21, 178, 0.2);
+  -webkit-filter: blur(75px);
+          filter: blur(75px);
+}
+
+/* line 109, src/scss/_components/homepage/_developer.scss */
 .developer__box-wrapper {
   position: relative;
   display: -webkit-box;
@@ -2323,39 +2405,50 @@ picture {
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-/* line 39, src/scss/_components/homepage/_developer.scss */
+/* line 115, src/scss/_components/homepage/_developer.scss */
 .developer__box-wrapper > div {
   width: 100%;
-  max-width: -webkit-calc(100% / 3);
-  max-width: calc(100% / 3);
+  max-width: -webkit-calc((100% - 150px) / 3);
+  max-width: calc((100% - 150px) / 3);
   padding-bottom: 50px;
 }
 
-/* line 47, src/scss/_components/homepage/_developer.scss */
+/* line 122, src/scss/_components/homepage/_developer.scss */
 .developer__box-head {
+  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: end;
-  -webkit-align-items: flex-end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
+  min-height: 550px;
 }
 
-/* line 53, src/scss/_components/homepage/_developer.scss */
+/* line 129, src/scss/_components/homepage/_developer.scss */
 .developer__box-head img {
+  z-index: 2;
+  position: relative;
+  display: block;
+  max-width: 100%;
+  height: auto;
   margin-left: auto;
   margin-right: auto;
 }
 
-/* line 64, src/scss/_components/homepage/_developer.scss */
+/* line 142, src/scss/_components/homepage/_developer.scss */
 .developer__box-title {
   padding-bottom: 15px;
   font-weight: bold;
@@ -2365,7 +2458,7 @@ picture {
   color: #E5E5E5;
 }
 
-/* line 73, src/scss/_components/homepage/_developer.scss */
+/* line 151, src/scss/_components/homepage/_developer.scss */
 .developer__box-line {
   width: 50px;
   height: 2px;
@@ -2377,7 +2470,7 @@ picture {
   background-color: #45E8E6;
 }
 
-/* line 83, src/scss/_components/homepage/_developer.scss */
+/* line 161, src/scss/_components/homepage/_developer.scss */
 .developer__box-desc {
   font-size: 16px;
   line-height: 24px;
