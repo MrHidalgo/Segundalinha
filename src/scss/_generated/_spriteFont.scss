@@ -45,41 +45,47 @@
 	@if $filename == cubes {
 		$char: "\E006";
 	}
-	@if $filename == emoticons {
+	@if $filename == diamond {
 		$char: "\E007";
 	}
-	@if $filename == facebook {
+	@if $filename == digital {
 		$char: "\E008";
 	}
-	@if $filename == global {
+	@if $filename == emoticons {
 		$char: "\E009";
 	}
-	@if $filename == instagram {
+	@if $filename == facebook {
 		$char: "\E00A";
 	}
-	@if $filename == ios {
+	@if $filename == global {
 		$char: "\E00B";
 	}
-	@if $filename == responsive-design {
+	@if $filename == instagram {
 		$char: "\E00C";
 	}
-	@if $filename == sim-card {
+	@if $filename == ios {
 		$char: "\E00D";
 	}
-	@if $filename == technical-support {
+	@if $filename == responsive-design {
 		$char: "\E00E";
 	}
-	@if $filename == twitter {
+	@if $filename == sim-card {
 		$char: "\E00F";
 	}
-	@if $filename == user {
+	@if $filename == technical-support {
 		$char: "\E010";
 	}
-	@if $filename == windows {
+	@if $filename == twitter {
 		$char: "\E011";
 	}
-	@if $filename == youtube {
+	@if $filename == user {
 		$char: "\E012";
+	}
+	@if $filename == windows {
+		$char: "\E013";
+	}
+	@if $filename == youtube {
+		$char: "\E014";
 	}
 
 	@return $char;
@@ -118,6 +124,14 @@
 }
 .icon-cubes {
 	@include icon(cubes);
+
+}
+.icon-diamond {
+	@include icon(diamond);
+
+}
+.icon-digital {
+	@include icon(digital);
 
 }
 .icon-emoticons {
