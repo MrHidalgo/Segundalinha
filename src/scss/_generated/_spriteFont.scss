@@ -36,56 +36,59 @@
 	@if $filename == appointment {
 		$char: "\E003";
 	}
-	@if $filename == conversation {
+	@if $filename == arrow-top {
 		$char: "\E004";
 	}
-	@if $filename == crm {
+	@if $filename == conversation {
 		$char: "\E005";
 	}
-	@if $filename == cubes {
+	@if $filename == crm {
 		$char: "\E006";
 	}
-	@if $filename == diamond {
+	@if $filename == cubes {
 		$char: "\E007";
 	}
-	@if $filename == digital {
+	@if $filename == diamond {
 		$char: "\E008";
 	}
-	@if $filename == emoticons {
+	@if $filename == digital {
 		$char: "\E009";
 	}
-	@if $filename == facebook {
+	@if $filename == emoticons {
 		$char: "\E00A";
 	}
-	@if $filename == global {
+	@if $filename == facebook {
 		$char: "\E00B";
 	}
-	@if $filename == instagram {
+	@if $filename == global {
 		$char: "\E00C";
 	}
-	@if $filename == ios {
+	@if $filename == instagram {
 		$char: "\E00D";
 	}
-	@if $filename == responsive-design {
+	@if $filename == ios {
 		$char: "\E00E";
 	}
-	@if $filename == sim-card {
+	@if $filename == responsive-design {
 		$char: "\E00F";
 	}
-	@if $filename == technical-support {
+	@if $filename == sim-card {
 		$char: "\E010";
 	}
-	@if $filename == twitter {
+	@if $filename == technical-support {
 		$char: "\E011";
 	}
-	@if $filename == user {
+	@if $filename == twitter {
 		$char: "\E012";
 	}
-	@if $filename == windows {
+	@if $filename == user {
 		$char: "\E013";
 	}
-	@if $filename == youtube {
+	@if $filename == windows {
 		$char: "\E014";
+	}
+	@if $filename == youtube {
+		$char: "\E015";
 	}
 
 	@return $char;
@@ -112,6 +115,10 @@
 }
 .icon-appointment {
 	@include icon(appointment);
+
+}
+.icon-arrow-top {
+	@include icon(arrow-top);
 
 }
 .icon-conversation {

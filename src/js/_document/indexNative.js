@@ -52,6 +52,24 @@
 			return tl;
 		}
 	};
+	
+	
+	const faq = () => {
+		$('.faq__collapse-head').on('click', (ev) => {
+			const el = $(ev.currentTarget);
+			
+			if(el.hasClass('is-active')) {
+				el.removeClass('is-active');
+				el.siblings('.faq__collapse-body').slideUp(550);
+			} else {
+				$('.faq__collapse-head').removeClass('is-active');
+				el.addClass('is-active');
+				
+				$('.faq__collapse-body').slideUp(550);
+				el.siblings('.faq__collapse-body').slideDown(550);
+			}
+		});
+	};
 	/*
 	* CALLBACK :: end
 	* ============================================= */
@@ -75,6 +93,7 @@
 		// callback
 		viewportAnimation();
 		pathFloatingAnimation();
+		faq();
 		// ==========================================
 	};
 	initNative();

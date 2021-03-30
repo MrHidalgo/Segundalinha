@@ -175,7 +175,7 @@
 }
 
 /* line 23, src/scss/_generated/_spriteFont.scss */
-.icon-android:before, .icon-apple:before, .icon-appointment:before, .icon-conversation:before, .icon-crm:before, .icon-cubes:before, .icon-diamond:before, .icon-digital:before, .icon-emoticons:before, .icon-facebook:before, .icon-global:before, .icon-instagram:before, .icon-ios:before, .icon-responsive-design:before, .icon-sim-card:before, .icon-technical-support:before, .icon-twitter:before, .icon-user:before, .icon-windows:before, .icon-youtube:before {
+.icon-android:before, .icon-apple:before, .icon-appointment:before, .icon-arrow-top:before, .icon-conversation:before, .icon-crm:before, .icon-cubes:before, .icon-diamond:before, .icon-digital:before, .icon-emoticons:before, .icon-facebook:before, .icon-global:before, .icon-instagram:before, .icon-ios:before, .icon-responsive-design:before, .icon-sim-card:before, .icon-technical-support:before, .icon-twitter:before, .icon-user:before, .icon-windows:before, .icon-youtube:before {
   font-family: "iconFont", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -186,104 +186,109 @@
   text-transform: none;
 }
 
-/* line 95, src/scss/_generated/_spriteFont.scss */
+/* line 98, src/scss/_generated/_spriteFont.scss */
 .icon-android:before {
   content: "";
 }
 
-/* line 95, src/scss/_generated/_spriteFont.scss */
+/* line 98, src/scss/_generated/_spriteFont.scss */
 .icon-apple:before {
   content: "";
 }
 
-/* line 95, src/scss/_generated/_spriteFont.scss */
+/* line 98, src/scss/_generated/_spriteFont.scss */
 .icon-appointment:before {
   content: "";
 }
 
-/* line 95, src/scss/_generated/_spriteFont.scss */
-.icon-conversation:before {
+/* line 98, src/scss/_generated/_spriteFont.scss */
+.icon-arrow-top:before {
   content: "";
 }
 
-/* line 95, src/scss/_generated/_spriteFont.scss */
-.icon-crm:before {
+/* line 98, src/scss/_generated/_spriteFont.scss */
+.icon-conversation:before {
   content: "";
 }
 
-/* line 95, src/scss/_generated/_spriteFont.scss */
-.icon-cubes:before {
+/* line 98, src/scss/_generated/_spriteFont.scss */
+.icon-crm:before {
   content: "";
 }
 
-/* line 95, src/scss/_generated/_spriteFont.scss */
-.icon-diamond:before {
+/* line 98, src/scss/_generated/_spriteFont.scss */
+.icon-cubes:before {
   content: "";
 }
 
-/* line 95, src/scss/_generated/_spriteFont.scss */
-.icon-digital:before {
+/* line 98, src/scss/_generated/_spriteFont.scss */
+.icon-diamond:before {
   content: "";
 }
 
-/* line 95, src/scss/_generated/_spriteFont.scss */
-.icon-emoticons:before {
+/* line 98, src/scss/_generated/_spriteFont.scss */
+.icon-digital:before {
   content: "";
 }
 
-/* line 95, src/scss/_generated/_spriteFont.scss */
-.icon-facebook:before {
+/* line 98, src/scss/_generated/_spriteFont.scss */
+.icon-emoticons:before {
   content: "";
 }
 
-/* line 95, src/scss/_generated/_spriteFont.scss */
-.icon-global:before {
+/* line 98, src/scss/_generated/_spriteFont.scss */
+.icon-facebook:before {
   content: "";
 }
 
-/* line 95, src/scss/_generated/_spriteFont.scss */
-.icon-instagram:before {
+/* line 98, src/scss/_generated/_spriteFont.scss */
+.icon-global:before {
   content: "";
 }
 
-/* line 95, src/scss/_generated/_spriteFont.scss */
-.icon-ios:before {
+/* line 98, src/scss/_generated/_spriteFont.scss */
+.icon-instagram:before {
   content: "";
 }
 
-/* line 95, src/scss/_generated/_spriteFont.scss */
-.icon-responsive-design:before {
+/* line 98, src/scss/_generated/_spriteFont.scss */
+.icon-ios:before {
   content: "";
 }
 
-/* line 95, src/scss/_generated/_spriteFont.scss */
-.icon-sim-card:before {
+/* line 98, src/scss/_generated/_spriteFont.scss */
+.icon-responsive-design:before {
   content: "";
 }
 
-/* line 95, src/scss/_generated/_spriteFont.scss */
-.icon-technical-support:before {
+/* line 98, src/scss/_generated/_spriteFont.scss */
+.icon-sim-card:before {
   content: "";
 }
 
-/* line 95, src/scss/_generated/_spriteFont.scss */
-.icon-twitter:before {
+/* line 98, src/scss/_generated/_spriteFont.scss */
+.icon-technical-support:before {
   content: "";
 }
 
-/* line 95, src/scss/_generated/_spriteFont.scss */
-.icon-user:before {
+/* line 98, src/scss/_generated/_spriteFont.scss */
+.icon-twitter:before {
   content: "";
 }
 
-/* line 95, src/scss/_generated/_spriteFont.scss */
-.icon-windows:before {
+/* line 98, src/scss/_generated/_spriteFont.scss */
+.icon-user:before {
   content: "";
 }
 
-/* line 95, src/scss/_generated/_spriteFont.scss */
-.icon-youtube:before {
+/* line 98, src/scss/_generated/_spriteFont.scss */
+.icon-windows:before {
   content: "";
+}
+
+/* line 98, src/scss/_generated/_spriteFont.scss */
+.icon-youtube:before {
+  content: "";
 }
 
 /* line 1, src/scss/_shared/_main-setting-reset.scss */
@@ -2751,7 +2756,279 @@ picture {
 
 /* line 3, src/scss/_components/team/_faq.scss */
 .faq {
+  position: relative;
   padding-top: 50px;
+  padding-bottom: 127px;
+}
+
+/* line 8, src/scss/_components/team/_faq.scss */
+.faq__bg {
+  z-index: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 16, src/scss/_components/team/_faq.scss */
+.faq__bg > div {
+  position: absolute;
+}
+
+/* line 19, src/scss/_components/team/_faq.scss */
+.faq__bg > div:nth-of-type(1) {
+  top: 30%;
+  left: 100px;
+}
+
+/* line 23, src/scss/_components/team/_faq.scss */
+.faq__bg > div:nth-of-type(2) {
+  bottom: 100px;
+  right: 0;
+}
+
+/* line 28, src/scss/_components/team/_faq.scss */
+.faq__bg > div img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* line 36, src/scss/_components/team/_faq.scss */
+.faq__wrapper {
+  z-index: 2;
+  position: relative;
+}
+
+/* line 41, src/scss/_components/team/_faq.scss */
+.faq__title {
+  position: relative;
+  padding-bottom: 45px;
+  font-weight: bold;
+  font-size: 45px;
+  line-height: 67px;
+  text-align: center;
+  color: #00caad;
+  text-transform: uppercase;
+}
+
+/* line 51, src/scss/_components/team/_faq.scss */
+.faq__title:before {
+  z-index: 0;
+  content: attr(data-title);
+  position: absolute;
+  top: -15px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: bold;
+  text-align: center;
+  font-size: 77px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.08);
+}
+
+/* line 68, src/scss/_components/team/_faq.scss */
+.faq__collapse {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+/* line 72, src/scss/_components/team/_faq.scss */
+.faq__collapse-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  max-width: 988px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 40px;
+}
+
+/* line 82, src/scss/_components/team/_faq.scss */
+.faq__collapse-wrapper > div:not(:last-of-type) {
+  padding-bottom: 17px;
+}
+
+/* line 88, src/scss/_components/team/_faq.scss */
+.faq__collapse-head {
+  overflow: hidden;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 78px;
+  padding: 10px 30px;
+  -webkit-border-radius: 125px;
+          border-radius: 125px;
+  background: -webkit-linear-gradient(296.72deg, #00CAAD -3.1%, #7168ED 83.26%), #C4C4C4;
+  background: -o-linear-gradient(296.72deg, #00CAAD -3.1%, #7168ED 83.26%), #C4C4C4;
+  background: linear-gradient(153.28deg, #00CAAD -3.1%, #7168ED 83.26%), #C4C4C4;
+}
+
+/* line 99, src/scss/_components/team/_faq.scss */
+.faq__collapse-head.is-active:after {
+  opacity: 1;
+  -webkit-transition: opacity 0.35s ease-in-out;
+  -o-transition: opacity 0.35s ease-in-out;
+  transition: opacity 0.35s ease-in-out;
+}
+
+/* line 105, src/scss/_components/team/_faq.scss */
+.faq__collapse-head.is-active > div:nth-of-type(2) {
+  background-color: #00CAAD;
+  -webkit-transition: background-color 0.35s ease-in-out;
+  -o-transition: background-color 0.35s ease-in-out;
+  transition: background-color 0.35s ease-in-out;
+}
+
+/* line 109, src/scss/_components/team/_faq.scss */
+.faq__collapse-head.is-active > div:nth-of-type(2) .icon-font {
+  -webkit-transform: translate(0, 1px) rotate(180deg);
+      -ms-transform: translate(0, 1px) rotate(180deg);
+          transform: translate(0, 1px) rotate(180deg);
+  -webkit-transition: -webkit-transform 0.35s ease-in-out;
+  transition: -webkit-transform 0.35s ease-in-out;
+  -o-transition: transform 0.35s ease-in-out;
+  transition: transform 0.35s ease-in-out;
+  transition: transform 0.35s ease-in-out, -webkit-transform 0.35s ease-in-out;
+}
+
+/* line 117, src/scss/_components/team/_faq.scss */
+.faq__collapse-head:after {
+  content: '';
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: -webkit-gradient(linear, left bottom, left top, from(#6672E7), to(#6672E7)), #C4C4C4;
+  background: -webkit-linear-gradient(bottom, #6672E7, #6672E7), #C4C4C4;
+  background: -o-linear-gradient(bottom, #6672E7, #6672E7), #C4C4C4;
+  background: linear-gradient(0deg, #6672E7, #6672E7), #C4C4C4;
+  -webkit-transition: opacity 0.35s ease-in-out;
+  -o-transition: opacity 0.35s ease-in-out;
+  transition: opacity 0.35s ease-in-out;
+}
+
+/* line 129, src/scss/_components/team/_faq.scss */
+.faq__collapse-head > div {
+  z-index: 2;
+  position: relative;
+}
+
+/* line 133, src/scss/_components/team/_faq.scss */
+.faq__collapse-head > div:nth-of-type(1) {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  min-width: 1px;
+  max-width: 100%;
+  padding-right: 30px;
+}
+
+/* line 139, src/scss/_components/team/_faq.scss */
+.faq__collapse-head > div:nth-of-type(1) p {
+  font-weight: 500;
+  font-size: 20px;
+  color: #FFFFFF;
+}
+
+/* line 145, src/scss/_components/team/_faq.scss */
+.faq__collapse-head > div:nth-of-type(2) {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 29px;
+  height: 29px;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  -webkit-box-shadow: -4.28424px 0px 8.56849px rgba(113, 213, 250, 0.54);
+          box-shadow: -4.28424px 0px 8.56849px rgba(113, 213, 250, 0.54);
+  background-color: #FFFFFF;
+  -webkit-transition: background-color 0.35s ease-in-out;
+  -o-transition: background-color 0.35s ease-in-out;
+  transition: background-color 0.35s ease-in-out;
+}
+
+/* line 156, src/scss/_components/team/_faq.scss */
+.faq__collapse-head > div:nth-of-type(2) .icon-font {
+  color: #000000;
+  font-size: 10px;
+  -webkit-transform: translate(1px, 0);
+      -ms-transform: translate(1px, 0);
+          transform: translate(1px, 0);
+  -webkit-transform-origin: center;
+      -ms-transform-origin: center;
+          transform-origin: center;
+  -webkit-transition: -webkit-transform 0.35s ease-in-out;
+  transition: -webkit-transform 0.35s ease-in-out;
+  -o-transition: transform 0.35s ease-in-out;
+  transition: transform 0.35s ease-in-out;
+  transition: transform 0.35s ease-in-out, -webkit-transform 0.35s ease-in-out;
+}
+
+/* line 167, src/scss/_components/team/_faq.scss */
+.faq__collapse-body {
+  display: none;
+}
+
+/* line 170, src/scss/_components/team/_faq.scss */
+.faq__collapse-body > div {
+  margin-top: 9px;
+  margin-bottom: 7px;
+  padding: 15px 20px;
+  -webkit-border-radius: 21px;
+          border-radius: 21px;
+  background: -webkit-gradient(linear, left bottom, left top, from(#3D385E), to(#3D385E)), #C4C4C4;
+  background: -webkit-linear-gradient(bottom, #3D385E, #3D385E), #C4C4C4;
+  background: -o-linear-gradient(bottom, #3D385E, #3D385E), #C4C4C4;
+  background: linear-gradient(0deg, #3D385E, #3D385E), #C4C4C4;
+}
+
+/* line 178, src/scss/_components/team/_faq.scss */
+.faq__collapse-body p {
+  font-size: 17px;
+  line-height: 25px;
+  color: #FFFFFF;
+}
+
+/* line 187, src/scss/_components/team/_faq.scss */
+.faq__btn .c-btn {
+  -webkit-box-shadow: 0px 12px 54px rgba(20, 185, 185, 0.31);
+          box-shadow: 0px 12px 54px rgba(20, 185, 185, 0.31);
 }
 
 /*# sourceMappingURL=maps/app.css.map */

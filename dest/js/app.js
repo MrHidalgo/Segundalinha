@@ -218,6 +218,23 @@ window.addEventListener('scroll', function (ev) {
 			return tl;
 		}
 	};
+
+	var faq = function faq() {
+		$('.faq__collapse-head').on('click', function (ev) {
+			var el = $(ev.currentTarget);
+
+			if (el.hasClass('is-active')) {
+				el.removeClass('is-active');
+				el.siblings('.faq__collapse-body').slideUp(550);
+			} else {
+				$('.faq__collapse-head').removeClass('is-active');
+				el.addClass('is-active');
+
+				$('.faq__collapse-body').slideUp(550);
+				el.siblings('.faq__collapse-body').slideDown(550);
+			}
+		});
+	};
 	/*
  * CALLBACK :: end
  * ============================================= */
@@ -240,6 +257,7 @@ window.addEventListener('scroll', function (ev) {
 		// callback
 		viewportAnimation();
 		pathFloatingAnimation();
+		faq();
 		// ==========================================
 	};
 	initNative();
