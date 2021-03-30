@@ -6,9 +6,11 @@ pageClassName: p-home
 extends shared/_layout
 
 block content
+block header
+block footer
   div.body.body--start(class!= pageClassName)
 
-    include components/homepage/_main
+    //include components/homepage/_main
     include components/homepage/_how
     include components/homepage/_more
-    include components/homepage/_developer
+    //include components/homepage/_developer

@@ -19,82 +19,53 @@
     <!-- STYLE :: END-->
   </head>
   <body>
-    <!-- HEADER :: START-->
-    <header class="header" id="header">
-      <div class="c-grid">
-        <div class="header__wrapper">
-          <div class="header__wrapper-left">
-            <div class="logo logo--header"><a class="logo__btn" href="/"> <img src="img/logo.svg" alt=""><img src="img/logo-mobile.svg" alt=""></a></div>
-            <div class="hamburger hamburger--squeeze" role="button" hamburger-js="hamburger-js">
-              <div class="hamburger-box">
-                <div class="hamburger-inner"></div>
-              </div>
-            </div>
-          </div>
-          <div class="header__mobile" mobile-block-js>
-            <div class="header__wrapper-middle">
-              <nav class="header__nav"><a href="#">Sobre</a><a href="#">Download</a><a href="#">Blog</a></nav>
-            </div>
-            <div class="header__wrapper-right">
-              <div class="header__sign"><a href="#">Log In</a>
-                <div><a class="header__sign-btn" href="#"><i class="icon-font icon-user"></i><span>Registrar</span></a></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </header>
-    <!-- HEADER :: END-->
     <div class="body body--start p-home">
-      <!-- SECTION :: START-->
-      <section class="main" id="main">
-        <div class="main__bg" parallax-js>
-          <div data-stellar-ratio="0.85"><img src="img/visual-about-1.png" srcset="img/visual-about-1@2x.png 2x" alt="" floating-node-js></div>
-          <div data-stellar-ratio="0.8"><img src="img/visual-about-3.svg" alt="" floating-node-js></div>
-          <div></div>
-        </div>
-        <div class="c-grid">
-          <div class="main__wrapper">
-            <h1 class="main__title">Seu telefone profissional, reiventado!</h1>
-            <p class="main__slogan">Uma nova forma de se comunicar com clientes, colaboradores e parceiros.</p>
-            <div class="main__btn c-btn__wrapper c-btn__wrapper--center"><a class="c-btn" href="#"><span>Cadastre-se na SegundaLinha</span></a></div>
-          </div>
-        </div>
-        <div class="main__visual-wrapper">
-          <div class="main__visual" parallax-js>
-            <div><img class="main__visual-device main__visual-device--clone" data-stellar-ratio="1.05" src="img/img-main-device-clone.png" srcset="img/img-main-device-clone@2x.png 2x" alt=""><img class="main__visual-cube main__visual-cube--big" floating-node-js src="img/img-main-cube-big.png" srcset="img/img-main-cube-big@2x.png 2x" alt=""><img class="main__visual-dots" data-stellar-ratio="0.9" src="img/img-main-dots.svg" alt=""><img class="main__visual-orb main__visual-orb--small" floating-node-js src="img/img-main-orb-small.png" srcset="img/img-main-orb-small@2x.png 2x" alt=""></div>
-            <div><img class="main__visual-device" data-stellar-ratio="0.95" src="img/img-main-device.png" srcset="img/img-main-device@2x.png 2x" alt=""></div>
-            <div><img class="main__visual-orb main__visual-orb--big" floating-node-js src="img/img-main-orb-big.png" srcset="img/img-main-orb-big@2x.png 2x" alt=""><img class="main__visual-cube main__visual-cube--small" floating-node-js src="img/img-main-cube-small.png" srcset="img/img-main-cube-small@2x.png 2x" alt=""><img class="main__visual-phone" data-stellar-ratio="1.15" src="img/img-main-phone.png" srcset="img/img-main-phone@2x.png 2x" alt=""></div>
-          </div>
-        </div>
-      </section>
-      <!-- SECTION :: END-->
+      <!--include components/homepage/_main-->
       <!-- SECTION :: START-->
       <section class="how" id="how">
+        <div class="how__bg">
+          <div><img src="img/visual-about-2.svg" alt="" floating-node-js></div>
+          <div><img src="img/img-sphere.png" srcset="img/img-sphere@2x.png 2x" alt="" floating-node-js></div>
+          <div><img src="img/visual-about-3.svg" alt="" floating-node-js></div>
+        </div>
         <div class="c-grid">
           <div class="how__wrapper">
-            <p class="how__title">COMO FUNCIONA</p>
+            <p class="how__title" data-title="COMO FUNCIONA">COMO FUNCIONA</p>
             <p class="how__desc">Agora ficou ainda mais fácil ter um número de telefone para o seu negócio. Tenha um número para a sua empresa em apenas três passos!</p>
             <div class="how__box-wrapper">
               <div>
-                <div class="how__box">
-                  <div class="how__box-head"></div>
+                <div class="how__box how__box-1">
+                  <div class="how__box-bg">
+                    <div></div>
+                  </div>
+                  <p class="how__box-num" parallax-js data-stellar-ratio="0.9">1</p>
+                  <div class="how__box-head"><img src="img/img-how-1.png" srcset="img/img-how-1@2x.png 2x" alt=""></div>
                   <div class="how__box-body">
                     <p>Escolha um número ou traga o seu</p>
                   </div>
                 </div>
               </div>
               <div>
-                <div class="how__box">
-                  <div class="how__box-head"></div>
+                <div class="how__box how__box-2">
+                  <div class="how__box-bg">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                  </div>
+                  <p class="how__box-num" parallax-js data-stellar-ratio="0.9">2</p>
+                  <div class="how__box-head"><img src="img/img-how-2.png" srcset="img/img-how-2@2x.png 2x" alt=""></div>
                   <div class="how__box-body">
                     <p>Baixe o aplicativo ou use o WebApp</p>
                   </div>
                 </div>
               </div>
               <div>
-                <div class="how__box">
-                  <div class="how__box-head"></div>
+                <div class="how__box how__box-3">
+                  <div class="how__box-bg">
+                    <div></div>
+                  </div>
+                  <p class="how__box-num" parallax-js data-stellar-ratio="0.9">3</p>
+                  <div class="how__box-head"><img src="img/img-how-3.png" srcset="img/img-how-3@2x.png 2x" alt=""></div>
                   <div class="how__box-body">
                     <p>Pronto, comece a ligar e receber chamadas e SMS</p>
                   </div>
@@ -183,103 +154,8 @@
         </div>
       </section>
       <!-- SECTION :: END-->
-      <!-- SECTION :: START-->
-      <section class="developer" id="developer">
-        <div class="c-grid">
-          <div class="developer__wrapper">
-            <p class="developer__title">DESENVOLVIDA PARA SUA EMPRESA E SEU TIME</p>
-            <p class="developer__desc">Simplicidade e Agilidade. Esses são os nossos pilares e é isso que vamos fazer para comunicação do seu negócio.</p>
-            <div class="developer__box-wrapper">
-              <div>
-                <div class="developer__box">
-                  <div class="developer__box-head">
-                    <!--img(src="img/img-developer-1.png" srcset="img/img-developer-1@2x.png 2x" alt="")-->
-                  </div>
-                  <div class="developer__box-body">
-                    <p class="developer__box-title">TRAGA SEU TIME</p>
-                    <div class="developer__box-line"></div>
-                    <p class="developer__box-desc">Convide seus colaboradres para compartilhar números profissionais ou ter números próprios. Você vai conseguir gerenciar todos os números da sua empresa usando uma interface muito simples.</p>
-                  </div>
-                </div>
-              </div>
-              <div>
-                <div class="developer__box">
-                  <div class="developer__box-head">
-                    <!--img(src="img/img-developer-2.png" srcset="img/img-developer-2@2x.png 2x" alt="")-->
-                  </div>
-                  <div class="developer__box-body">
-                    <p class="developer__box-title">COMPARTILHE NÚMEROS</p>
-                    <div class="developer__box-line"></div>
-                    <p class="developer__box-desc">Seus colaboradores vão poder fazer ligações e enviar mensagens de um mesmo número. E você, vai saber quem enviou cada mensagem para os clientes.</p>
-                  </div>
-                </div>
-              </div>
-              <div>
-                <div class="developer__box">
-                  <div class="developer__box-head">
-                    <!--img(src="img/img-developer-3.png" srcset="img/img-developer-3@2x.png 2x" alt="")-->
-                  </div>
-                  <div class="developer__box-body">
-                    <p class="developer__box-title">MÉTRICAS SIMPLIFICADAS</p>
-                    <div class="developer__box-line"></div>
-                    <p class="developer__box-desc">Quanto tempo seus colabroadores conversaram com seus clientes na semana passada? Qual é o momento mais agitado da semana no seu negócio? Com a SegundaLinha você terá todas essas informações e muito mais.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="developer__btn c-btn__wrapper c-btn__wrapper--center"><a class="c-btn" href="#"><span>Comece já! Cadastre-se</span></a></div>
-          </div>
-        </div>
-      </section>
-      <!-- SECTION :: END-->
+      <!--include components/homepage/_developer-->
     </div>
-    <!-- FOOTER :: START-->
-    <footer class="footer" id="footer">
-      <div class="footer__bg" parallax-js>
-        <div data-stellar-ratio="1.1"><img src="img/dot-grid.svg" alt=""></div>
-        <div data-stellar-ratio="0.95"><span floating-node-js></span></div>
-      </div>
-      <div class="c-grid">
-        <div class="footer__wrapper footer__wrapper-1">
-          <div class="footer__wrapper-left" data-aos="fade-up" data-aos-easing="ease-in-out">
-            <div class="logo logo--footer"><a class="logo__btn" href="/"><img src="img/logo--white.svg" alt=""></a></div>
-            <p class="footer__info">Parque Tecnológico Alfa, Florianópolis - SC 88030-000 Telefone: +48 30171617</p>
-            <div class="footer__sign"><a href="#">Log In</a>
-              <div><a class="footer__sign-btn" href="#"><i class="icon-font icon-user"></i><span>Registrar</span></a></div>
-            </div>
-          </div>
-          <div class="footer__wrapper-right">
-            <div data-aos="fade-up" data-aos-easing="ease-in-out">
-              <p class="footer__title">Empresa</p>
-              <nav class="footer__nav"><a href="#">Sobre</a><a href="#">Imprensa</a><a href="#">Termos de Serviço</a><a href="#">Termos de Serviço</a></nav>
-            </div>
-            <div data-aos="fade-up" data-aos-easing="ease-in-out">
-              <p class="footer__title">Contato</p>
-              <nav class="footer__nav"><a href="#">E-mail</a><a href="#">Facebook</a><a href="#">Twitter</a><a href="#">Instagram</a></nav>
-            </div>
-            <div data-aos="fade-up" data-aos-easing="ease-in-out">
-              <p class="footer__title">Recursos</p>
-              <nav class="footer__nav"><a href="#">Blog</a><a href="#">Novidades</a><a href="#">Downloads</a></nav>
-            </div>
-            <div data-aos="fade-up" data-aos-easing="ease-in-out">
-              <p class="footer__title">Artigos</p>
-              <nav class="footer__nav"><a href="#">Article 1</a><a href="#">Article 2</a><a href="#">Article 3</a></nav>
-            </div>
-          </div>
-        </div>
-        <div class="footer__wrapper footer__wrapper-2">
-          <div class="footer__wrapper-left">
-            <div class="copyright" data-aos="fade-up" data-aos-easing="ease-in-out">
-              <p class="copyright__text">SegundaLinha © 2021. Todos os direitos reservados.</p>
-            </div>
-          </div>
-          <div class="footer__wrapper-right">
-            <div class="social" data-aos="fade-up" data-aos-easing="ease-in-out"><a href="#"><i class="icon-font icon-facebook"></i></a><a href="#"><i class="icon-font icon-twitter"></i></a><a href="#"><i class="icon-font icon-instagram"></i></a><a href="#"><i class="icon-font icon-youtube"></i></a></div>
-          </div>
-        </div>
-      </div>
-    </footer>
-    <!-- FOOTER :: END-->
   </body>
   <!-- SCRIPT :: START-->
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>

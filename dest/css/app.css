@@ -1850,12 +1850,54 @@ picture {
 
 /* line 3, src/scss/_components/homepage/_how.scss */
 .how {
+  position: relative;
   padding-top: 100px;
   padding-bottom: 75px;
 }
 
-/* line 7, src/scss/_components/homepage/_how.scss */
+/* line 8, src/scss/_components/homepage/_how.scss */
+.how__bg {
+  z-index: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 16, src/scss/_components/homepage/_how.scss */
+.how__bg > div {
+  position: absolute;
+}
+
+/* line 19, src/scss/_components/homepage/_how.scss */
+.how__bg > div:nth-of-type(1) {
+  top: 0;
+  left: 50px;
+}
+
+/* line 23, src/scss/_components/homepage/_how.scss */
+.how__bg > div:nth-of-type(2) {
+  top: 0;
+  right: 100px;
+}
+
+/* line 27, src/scss/_components/homepage/_how.scss */
+.how__bg > div:nth-of-type(3) {
+  left: 50px;
+  bottom: 10%;
+}
+
+/* line 32, src/scss/_components/homepage/_how.scss */
+.how__bg > div img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* line 40, src/scss/_components/homepage/_how.scss */
 .how__title {
+  position: relative;
   padding-bottom: 30px;
   font-weight: bold;
   font-size: 45px;
@@ -1864,21 +1906,46 @@ picture {
   color: #00CAAD;
 }
 
-/* line 16, src/scss/_components/homepage/_how.scss */
+/* line 49, src/scss/_components/homepage/_how.scss */
+.how__title:before {
+  z-index: 0;
+  content: attr(data-title);
+  position: absolute;
+  top: -15px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: bold;
+  text-align: center;
+  font-size: 77px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.08);
+}
+
+@media screen and (max-width: 1023px) {
+  /* line 49, src/scss/_components/homepage/_how.scss */
+  .how__title:before {
+    font-size: 57px;
+  }
+}
+
+/* line 69, src/scss/_components/homepage/_how.scss */
 .how__desc {
   width: 100%;
   max-width: 1069px;
   margin-left: auto;
   margin-right: auto;
-  padding-bottom: 100px;
+  padding-bottom: 155px;
   font-size: 28px;
   line-height: 42px;
   text-align: center;
   color: #aeaeae;
 }
 
-/* line 28, src/scss/_components/homepage/_how.scss */
+/* line 81, src/scss/_components/homepage/_how.scss */
 .how__box {
+  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1888,9 +1955,96 @@ picture {
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
+  min-height: 100%;
 }
 
-/* line 32, src/scss/_components/homepage/_how.scss */
+/* line 89, src/scss/_components/homepage/_how.scss */
+.how__box.how__box-1 .how__box-bg, .how__box.how__box-3 .how__box-bg {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+/* line 94, src/scss/_components/homepage/_how.scss */
+.how__box.how__box-1 .how__box-bg > div, .how__box.how__box-3 .how__box-bg > div {
+  opacity: 0.55;
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  background: rgba(156, 96, 255, 0.6);
+  -webkit-filter: blur(75px);
+          filter: blur(75px);
+}
+
+/* line 108, src/scss/_components/homepage/_how.scss */
+.how__box.how__box-2 .how__box-bg > div {
+  position: absolute;
+  -webkit-filter: blur(75px);
+          filter: blur(75px);
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+}
+
+/* line 113, src/scss/_components/homepage/_how.scss */
+.how__box.how__box-2 .how__box-bg > div:nth-of-type(1) {
+  opacity: 0.55;
+  left: 0;
+  bottom: 0;
+  width: 200px;
+  height: 200px;
+  background: rgba(156, 96, 255, 0.6);
+}
+
+/* line 121, src/scss/_components/homepage/_how.scss */
+.how__box.how__box-2 .how__box-bg > div:nth-of-type(2) {
+  top: 50%;
+  right: 0;
+  -webkit-transform: translate(0, -50%);
+      -ms-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  width: 250px;
+  height: 250px;
+  background: rgba(75, 146, 253, 0.5);
+}
+
+/* line 129, src/scss/_components/homepage/_how.scss */
+.how__box.how__box-2 .how__box-bg > div:nth-of-type(3) {
+  top: 100px;
+  right: 0;
+  width: 150px;
+  height: 150px;
+  background: rgba(143, 75, 253, 0.45);
+}
+
+/* line 140, src/scss/_components/homepage/_how.scss */
+.how__box.how__box-2 .how__box-head {
+  position: relative;
+}
+
+/* line 143, src/scss/_components/homepage/_how.scss */
+.how__box.how__box-2 .how__box-head img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  -webkit-transform: translate(-24%, -60px);
+      -ms-transform: translate(-24%, -60px);
+          transform: translate(-24%, -60px);
+  max-width: unset;
+}
+
+/* line 154, src/scss/_components/homepage/_how.scss */
 .how__box-wrapper {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1899,14 +2053,70 @@ picture {
   padding-bottom: 58px;
 }
 
-/* line 36, src/scss/_components/homepage/_how.scss */
+/* line 158, src/scss/_components/homepage/_how.scss */
 .how__box-wrapper > div {
   width: 100%;
   max-width: -webkit-calc(100% / 3);
   max-width: calc(100% / 3);
 }
 
-/* line 43, src/scss/_components/homepage/_how.scss */
+/* line 164, src/scss/_components/homepage/_how.scss */
+.how__box-bg {
+  z-index: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 173, src/scss/_components/homepage/_how.scss */
+.how__box-num {
+  z-index: 1;
+  position: absolute;
+  top: -125px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-weight: 500;
+  font-size: 222px;
+  line-height: 1;
+  color: rgba(48, 235, 213, 0.04);
+}
+
+/* line 188, src/scss/_components/homepage/_how.scss */
+.how__box-head, .how__box-body {
+  z-index: 2;
+  position: relative;
+}
+
+/* line 194, src/scss/_components/homepage/_how.scss */
+.how__box-head {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  min-height: 1px;
+  max-height: 100%;
+}
+
+/* line 199, src/scss/_components/homepage/_how.scss */
+.how__box-head img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 208, src/scss/_components/homepage/_how.scss */
+.how__box-body {
+  padding-top: 50px;
+}
+
+/* line 211, src/scss/_components/homepage/_how.scss */
 .how__box-body p {
   width: 100%;
   max-width: 290px;
