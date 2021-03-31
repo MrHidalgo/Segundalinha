@@ -4,6 +4,9 @@
 	position: relative;
 	padding-top: 50px;
 	padding-bottom: 127px;
+	@include adaptive(767) {
+		padding-bottom: 150px;
+	}
 
 	&__bg {
 		z-index: 0;
@@ -47,6 +50,13 @@
 		text-align: center;
 		color: #00caad;
 		text-transform: uppercase;
+		@include adaptive(1023) {
+			font-size: 40px;
+		}
+		@include adaptive(767) {
+			font-size: 35px;
+			line-height: 55px;
+		}
 
 		&:before {
 			z-index: 0;
@@ -62,6 +72,12 @@
 			font-size: 77px;
 			text-transform: uppercase;
 			color: rgba(#FFFFFF, 0.08);
+			@include adaptive(1023) {
+				font-size: 57px;
+			}
+			@include adaptive(767) {
+				display: none;
+			}
 		}
 	}
 
@@ -77,6 +93,9 @@
 			margin-left: auto;
 			margin-right: auto;
 			padding-bottom: 40px;
+			@include adaptive(767) {
+				padding-bottom: 50px;
+			}
 
 			> div {
 				&:not(:last-of-type) {
@@ -140,6 +159,9 @@
 						font-weight: 500;
 						font-size: 20px;
 						color: #FFFFFF;
+						@include adaptive(767) {
+							font-size: 16px;
+						}
 					}
 				}
 				&:nth-of-type(2) {
@@ -152,6 +174,10 @@
 					box-shadow: -4.28424px 0px 8.56849px rgba(113, 213, 250, 0.54);
 					background-color: #FFFFFF;
 					@include transition(background-color);
+					@include adaptive(767) {
+						width: 24px;
+						height: 24px;
+					}
 
 					.icon-font {
 						color: #000000;
@@ -159,6 +185,10 @@
 						transform: translate(1px, 0);
 						transform-origin: center;
 						@include transition(transform);
+						@include adaptive(767) {
+							transform: translate(0, 0);
+							font-size: 8px;
+						}
 					}
 				}
 			}
@@ -179,6 +209,9 @@
 				font-size: 17px;
 				line-height: 25px;
 				color: #FFFFFF;
+				@include adaptive(767) {
+					font-size: 14px;
+				}
 			}
 		}
 	}

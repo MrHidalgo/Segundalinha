@@ -4,6 +4,9 @@
 	position: relative;
 	padding-top: 65px;
 	padding-bottom: 50px;
+	@include adaptive(767) {
+		padding-top: 50px;
+	}
 
 	&__bg {
 		z-index: 0;
@@ -27,6 +30,9 @@
 			&:nth-of-type(3) {
 				right: -225px;
 				bottom: -75px;
+				@include adaptive(767) {
+					display: none;
+				}
 			}
 		}
 	}
@@ -48,6 +54,10 @@
 		@include adaptive(1023) {
 			font-size: 40px;
 		}
+		@include adaptive(767) {
+			font-size: 35px;
+			line-height: 55px;
+		}
 
 		&:before {
 			z-index: 0;
@@ -65,6 +75,9 @@
 			color: rgba(#FFFFFF, 0.08);
 			@include adaptive(1023) {
 				font-size: 57px;
+			}
+			@include adaptive(767) {
+				display: none;
 			}
 		}
 	}
@@ -119,6 +132,9 @@
 				@include adaptive(1023) {
 					max-width: calc(100% / 2);
 				}
+				@include adaptive(767) {
+					max-width: 100%;
+				}
 			}
 		}
 
@@ -140,6 +156,10 @@
 			@include adaptive(1279) {
 				width: 275px;
 				height: 275px;
+			}
+			@include adaptive(767) {
+				width: 225px;
+				height: 225px;
 			}
 
 			> div {
