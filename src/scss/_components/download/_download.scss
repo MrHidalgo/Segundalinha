@@ -4,6 +4,10 @@
 	position: relative;
 	padding-top: 193px;
 	padding-bottom: 300px;
+	@include adaptive(767) {
+		padding-top: 150px;
+		padding-bottom: 150px;
+	}
 
 	&__bg {
 		z-index: 0;
@@ -53,10 +57,16 @@
 			&:nth-of-type(4) {
 				top: 100px;
 				right: -50px;
+				@include adaptive(767) {
+					transform: scale(0.5);
+				}
 			}
 			&:nth-of-type(5) {
 				right: 125px;
 				bottom: 200px;
+				@include adaptive(767) {
+					display: none;
+				}
 
 				img {
 					opacity: 0.9;
@@ -85,6 +95,11 @@
 			font-size: 40px;
 			line-height: 60px;
 		}
+		@include adaptive(767) {
+			padding-bottom: 75px;
+			font-size: 35px;
+			line-height: 55px;
+		}
 	}
 
 	&__btn {
@@ -98,6 +113,9 @@
 		line-height: 25px;
 		color: #BDBECC;
 		text-align: center;
+		@include adaptive(767) {
+			font-size: 15px;
+		}
 	}
 
 	&__box {
@@ -113,6 +131,9 @@
 		border-radius: 35px;
 		background-color: transparent;
 		@include transition(border-color, background-color);
+		@include adaptive(767) {
+			height: 275px;
+		}
 
 		> div {
 			&:nth-of-type(1) {
@@ -149,6 +170,9 @@
 				padding-bottom: 21px;
 				@include adaptive(1279) {
 					max-width: calc(100% / 3);
+				}
+				@include adaptive(767) {
+					max-width: 100%;
 				}
 			}
 		}
