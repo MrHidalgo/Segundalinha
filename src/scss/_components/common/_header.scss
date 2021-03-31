@@ -114,6 +114,10 @@
 				@include transition(opacity, visibility, transform);
 			}
 		}
+		@include adaptive(767) {
+			top: 77px;
+			height: calc(100% - 77px);
+		}
 	}
 
 	&__nav {
@@ -131,7 +135,8 @@
 			line-height: 25px;
 			color: #F6F8FA;
 			@include adaptive(1023) {
-				min-height: 60px;
+				align-items: center;
+				margin-bottom: 30px;
 				font-size: 20px;
 			}
 
