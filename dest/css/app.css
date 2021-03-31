@@ -511,14 +511,26 @@ picture {
   display: flex;
 }
 
-/* line 6, src/scss/_shared/_common.scss */
+@media screen and (max-width: 767px) {
+  /* line 3, src/scss/_shared/_common.scss */
+  .copyright {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+    padding-bottom: 15px;
+  }
+}
+
+/* line 11, src/scss/_shared/_common.scss */
 .copyright__text {
   font-size: 14px;
   line-height: 31px;
   color: #D1E2E5;
 }
 
-/* line 13, src/scss/_shared/_common.scss */
+/* line 18, src/scss/_shared/_common.scss */
 .social {
   display: -webkit-box;
   display: -webkit-flex;
@@ -526,7 +538,7 @@ picture {
   display: flex;
 }
 
-/* line 16, src/scss/_shared/_common.scss */
+/* line 21, src/scss/_shared/_common.scss */
 .social a {
   display: -webkit-box;
   display: -webkit-flex;
@@ -544,7 +556,7 @@ picture {
   height: 32px;
 }
 
-/* line 24, src/scss/_shared/_common.scss */
+/* line 29, src/scss/_shared/_common.scss */
 .social a:hover .icon-font {
   -webkit-transform: scale(1.1);
       -ms-transform: scale(1.1);
@@ -556,7 +568,7 @@ picture {
   transition: transform 0.35s ease-in-out, -webkit-transform 0.35s ease-in-out;
 }
 
-/* line 30, src/scss/_shared/_common.scss */
+/* line 35, src/scss/_shared/_common.scss */
 .social a .icon-font {
   color: #ffffff;
   font-size: 14px;
@@ -570,7 +582,7 @@ picture {
   transition: transform 0.35s ease-in-out, -webkit-transform 0.35s ease-in-out;
 }
 
-/* line 41, src/scss/_shared/_common.scss */
+/* line 46, src/scss/_shared/_common.scss */
 [parallax-js],
 [parallax-js] > * {
   -webkit-transform-origin: center;
@@ -617,6 +629,7 @@ picture {
 /* line 16, src/scss/_macros/_logotype.scss */
 .logo.logo--header .logo__btn img:nth-of-type(2) {
   display: none;
+  max-width: 50px;
 }
 
 @media screen and (max-width: 1279px) {
@@ -626,12 +639,23 @@ picture {
   }
 }
 
-/* line 26, src/scss/_macros/_logotype.scss */
+/* line 27, src/scss/_macros/_logotype.scss */
 .logo.logo--footer {
   padding-bottom: 47px;
 }
 
-/* line 30, src/scss/_macros/_logotype.scss */
+@media screen and (max-width: 767px) {
+  /* line 27, src/scss/_macros/_logotype.scss */
+  .logo.logo--footer {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-bottom: 50px;
+  }
+}
+
+/* line 35, src/scss/_macros/_logotype.scss */
 .logo__btn {
   display: -webkit-box;
   display: -webkit-flex;
@@ -645,7 +669,14 @@ picture {
   max-width: 357px;
 }
 
-/* line 36, src/scss/_macros/_logotype.scss */
+@media screen and (max-width: 767px) {
+  /* line 35, src/scss/_macros/_logotype.scss */
+  .logo__btn {
+    max-width: 300px;
+  }
+}
+
+/* line 44, src/scss/_macros/_logotype.scss */
 .logo__btn img {
   display: block;
   max-width: 100%;
@@ -966,7 +997,7 @@ picture {
     height: -webkit-calc(100% - 94px);
     height: calc(100% - 94px);
     padding: 50px;
-    background-color: rgba(37, 46, 53, 0.95);
+    background-color: rgba(37, 46, 53, 0.975);
     -webkit-transform-origin: center;
         -ms-transform-origin: center;
             transform-origin: center;
@@ -1279,14 +1310,29 @@ picture {
   left: -30px;
 }
 
-/* line 27, src/scss/_components/common/_footer.scss */
+@media screen and (max-width: 767px) {
+  /* line 23, src/scss/_components/common/_footer.scss */
+  .footer__bg > div:nth-of-type(1) {
+    top: -50px;
+    left: -50px;
+  }
+}
+
+/* line 31, src/scss/_components/common/_footer.scss */
 .footer__bg > div:nth-of-type(1) img {
   display: block;
   max-width: 100%;
   height: auto;
 }
 
-/* line 33, src/scss/_components/common/_footer.scss */
+@media screen and (max-width: 767px) {
+  /* line 31, src/scss/_components/common/_footer.scss */
+  .footer__bg > div:nth-of-type(1) img {
+    max-width: 102px;
+  }
+}
+
+/* line 40, src/scss/_components/common/_footer.scss */
 .footer__bg > div:nth-of-type(2) {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1297,14 +1343,14 @@ picture {
 }
 
 @media screen and (max-width: 1279px) {
-  /* line 33, src/scss/_components/common/_footer.scss */
+  /* line 40, src/scss/_components/common/_footer.scss */
   .footer__bg > div:nth-of-type(2) {
     top: -150px;
     right: -150px;
   }
 }
 
-/* line 42, src/scss/_components/common/_footer.scss */
+/* line 49, src/scss/_components/common/_footer.scss */
 .footer__bg > div:nth-of-type(2) span {
   width: 434px;
   height: 434px;
@@ -1317,20 +1363,28 @@ picture {
 }
 
 @media screen and (max-width: 1279px) {
-  /* line 42, src/scss/_components/common/_footer.scss */
+  /* line 49, src/scss/_components/common/_footer.scss */
   .footer__bg > div:nth-of-type(2) span {
     width: 334px;
     height: 334px;
   }
 }
 
-/* line 57, src/scss/_components/common/_footer.scss */
+@media screen and (max-width: 767px) {
+  /* line 49, src/scss/_components/common/_footer.scss */
+  .footer__bg > div:nth-of-type(2) span {
+    width: 204px;
+    height: 204px;
+  }
+}
+
+/* line 68, src/scss/_components/common/_footer.scss */
 .footer__wrapper {
   z-index: 2;
   position: relative;
 }
 
-/* line 61, src/scss/_components/common/_footer.scss */
+/* line 72, src/scss/_components/common/_footer.scss */
 .footer__wrapper-1 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1340,7 +1394,7 @@ picture {
 }
 
 @media screen and (max-width: 1279px) {
-  /* line 61, src/scss/_components/common/_footer.scss */
+  /* line 72, src/scss/_components/common/_footer.scss */
   .footer__wrapper-1 {
     -webkit-flex-wrap: wrap;
         -ms-flex-wrap: wrap;
@@ -1348,7 +1402,14 @@ picture {
   }
 }
 
-/* line 69, src/scss/_components/common/_footer.scss */
+@media screen and (max-width: 767px) {
+  /* line 72, src/scss/_components/common/_footer.scss */
+  .footer__wrapper-1 {
+    padding-bottom: 30px;
+  }
+}
+
+/* line 83, src/scss/_components/common/_footer.scss */
 .footer__wrapper-1 .footer__wrapper-left {
   width: 100%;
   max-width: 665px;
@@ -1356,21 +1417,22 @@ picture {
 }
 
 @media screen and (max-width: 1535px) {
-  /* line 69, src/scss/_components/common/_footer.scss */
+  /* line 83, src/scss/_components/common/_footer.scss */
   .footer__wrapper-1 .footer__wrapper-left {
     max-width: 505px;
   }
 }
 
 @media screen and (max-width: 1279px) {
-  /* line 69, src/scss/_components/common/_footer.scss */
+  /* line 83, src/scss/_components/common/_footer.scss */
   .footer__wrapper-1 .footer__wrapper-left {
     max-width: 100%;
+    padding-right: 0;
     padding-bottom: 80px;
   }
 }
 
-/* line 82, src/scss/_components/common/_footer.scss */
+/* line 97, src/scss/_components/common/_footer.scss */
 .footer__wrapper-1 .footer__wrapper-right {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1384,7 +1446,16 @@ picture {
   max-width: 100%;
 }
 
-/* line 88, src/scss/_components/common/_footer.scss */
+@media screen and (max-width: 767px) {
+  /* line 97, src/scss/_components/common/_footer.scss */
+  .footer__wrapper-1 .footer__wrapper-right {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+  }
+}
+
+/* line 106, src/scss/_components/common/_footer.scss */
 .footer__wrapper-1 .footer__wrapper-right > div {
   -webkit-box-flex: 1;
   -webkit-flex: 1;
@@ -1394,7 +1465,18 @@ picture {
   max-width: 100%;
 }
 
-/* line 97, src/scss/_components/common/_footer.scss */
+@media screen and (max-width: 767px) {
+  /* line 106, src/scss/_components/common/_footer.scss */
+  .footer__wrapper-1 .footer__wrapper-right > div {
+    -webkit-box-flex: 50%;
+    -webkit-flex: 50%;
+        -ms-flex: 50%;
+            flex: 50%;
+    padding-bottom: 30px;
+  }
+}
+
+/* line 119, src/scss/_components/common/_footer.scss */
 .footer__wrapper-2 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1413,13 +1495,30 @@ picture {
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 97, src/scss/_components/common/_footer.scss */
+  /* line 119, src/scss/_components/common/_footer.scss */
   .footer__wrapper-2 {
     min-height: 100px;
   }
 }
 
-/* line 109, src/scss/_components/common/_footer.scss */
+@media screen and (max-width: 767px) {
+  /* line 119, src/scss/_components/common/_footer.scss */
+  .footer__wrapper-2 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+}
+
+/* line 137, src/scss/_components/common/_footer.scss */
 .footer__title {
   padding-bottom: 20px;
   font-size: 20px;
@@ -1428,13 +1527,21 @@ picture {
 }
 
 @media screen and (max-width: 1023px) {
-  /* line 109, src/scss/_components/common/_footer.scss */
+  /* line 137, src/scss/_components/common/_footer.scss */
   .footer__title {
     line-height: 26px;
   }
 }
 
-/* line 119, src/scss/_components/common/_footer.scss */
+@media screen and (max-width: 767px) {
+  /* line 137, src/scss/_components/common/_footer.scss */
+  .footer__title {
+    text-align: center;
+    font-size: 18px;
+  }
+}
+
+/* line 151, src/scss/_components/common/_footer.scss */
 .footer__nav {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1451,7 +1558,17 @@ picture {
           flex-direction: column;
 }
 
-/* line 124, src/scss/_components/common/_footer.scss */
+@media screen and (max-width: 767px) {
+  /* line 151, src/scss/_components/common/_footer.scss */
+  .footer__nav {
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+/* line 159, src/scss/_components/common/_footer.scss */
 .footer__nav a {
   position: relative;
   display: -webkit-box;
@@ -1464,19 +1581,26 @@ picture {
 }
 
 @media screen and (max-width: 1279px) {
-  /* line 124, src/scss/_components/common/_footer.scss */
+  /* line 159, src/scss/_components/common/_footer.scss */
   .footer__nav a {
     font-size: 16px;
     line-height: 42px;
   }
 }
 
-/* line 135, src/scss/_components/common/_footer.scss */
+@media screen and (max-width: 767px) {
+  /* line 159, src/scss/_components/common/_footer.scss */
+  .footer__nav a {
+    font-size: 14px;
+  }
+}
+
+/* line 173, src/scss/_components/common/_footer.scss */
 .footer__nav a:hover {
   color: #ffffff;
 }
 
-/* line 137, src/scss/_components/common/_footer.scss */
+/* line 175, src/scss/_components/common/_footer.scss */
 .footer__nav a:hover:before, .footer__nav a:hover:after {
   width: 50%;
   -webkit-transition: width 0.35s ease-in-out;
@@ -1484,7 +1608,7 @@ picture {
   transition: width 0.35s ease-in-out;
 }
 
-/* line 144, src/scss/_components/common/_footer.scss */
+/* line 182, src/scss/_components/common/_footer.scss */
 .footer__nav a:before, .footer__nav a:after {
   content: '';
   position: absolute;
@@ -1497,17 +1621,17 @@ picture {
   transition: width 0.35s ease-in-out;
 }
 
-/* line 155, src/scss/_components/common/_footer.scss */
+/* line 193, src/scss/_components/common/_footer.scss */
 .footer__nav a:before {
   left: 50%;
 }
 
-/* line 158, src/scss/_components/common/_footer.scss */
+/* line 196, src/scss/_components/common/_footer.scss */
 .footer__nav a:after {
   right: 50%;
 }
 
-/* line 164, src/scss/_components/common/_footer.scss */
+/* line 202, src/scss/_components/common/_footer.scss */
 .footer__info {
   width: 100%;
   max-width: 552px;
@@ -1518,13 +1642,22 @@ picture {
 }
 
 @media screen and (max-width: 1279px) {
-  /* line 164, src/scss/_components/common/_footer.scss */
+  /* line 202, src/scss/_components/common/_footer.scss */
   .footer__info {
     font-size: 18px;
   }
 }
 
-/* line 176, src/scss/_components/common/_footer.scss */
+@media screen and (max-width: 767px) {
+  /* line 202, src/scss/_components/common/_footer.scss */
+  .footer__info {
+    font-size: 16px;
+    text-align: center;
+    padding-bottom: 30px;
+  }
+}
+
+/* line 219, src/scss/_components/common/_footer.scss */
 .footer__sign {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1536,7 +1669,22 @@ picture {
           align-items: center;
 }
 
-/* line 180, src/scss/_components/common/_footer.scss */
+@media screen and (max-width: 767px) {
+  /* line 219, src/scss/_components/common/_footer.scss */
+  .footer__sign {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+/* line 227, src/scss/_components/common/_footer.scss */
 .footer__sign > a {
   position: relative;
   display: -webkit-box;
@@ -1550,7 +1698,15 @@ picture {
   color: #FFFFFF;
 }
 
-/* line 190, src/scss/_components/common/_footer.scss */
+@media screen and (max-width: 767px) {
+  /* line 227, src/scss/_components/common/_footer.scss */
+  .footer__sign > a {
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+}
+
+/* line 241, src/scss/_components/common/_footer.scss */
 .footer__sign > a:hover:before, .footer__sign > a:hover:after {
   width: 50%;
   -webkit-transition: width 0.35s ease-in-out;
@@ -1558,7 +1714,7 @@ picture {
   transition: width 0.35s ease-in-out;
 }
 
-/* line 197, src/scss/_components/common/_footer.scss */
+/* line 248, src/scss/_components/common/_footer.scss */
 .footer__sign > a:before, .footer__sign > a:after {
   content: '';
   position: absolute;
@@ -1571,17 +1727,17 @@ picture {
   transition: width 0.35s ease-in-out;
 }
 
-/* line 208, src/scss/_components/common/_footer.scss */
+/* line 259, src/scss/_components/common/_footer.scss */
 .footer__sign > a:before {
   left: 50%;
 }
 
-/* line 211, src/scss/_components/common/_footer.scss */
+/* line 262, src/scss/_components/common/_footer.scss */
 .footer__sign > a:after {
   right: 50%;
 }
 
-/* line 216, src/scss/_components/common/_footer.scss */
+/* line 267, src/scss/_components/common/_footer.scss */
 .footer__sign-btn {
   outline: none;
   position: relative;
@@ -1608,7 +1764,7 @@ picture {
   transition: background-color 0.35s ease-in-out;
 }
 
-/* line 231, src/scss/_components/common/_footer.scss */
+/* line 282, src/scss/_components/common/_footer.scss */
 .footer__sign-btn:hover {
   background-color: #ffffff;
   -webkit-transition: background-color 0.35s ease-in-out;
@@ -1616,7 +1772,7 @@ picture {
   transition: background-color 0.35s ease-in-out;
 }
 
-/* line 235, src/scss/_components/common/_footer.scss */
+/* line 286, src/scss/_components/common/_footer.scss */
 .footer__sign-btn:hover .icon-font,
 .footer__sign-btn:hover span {
   color: #A9A3FF;
@@ -1625,7 +1781,7 @@ picture {
   transition: color 0.35s ease-in-out;
 }
 
-/* line 242, src/scss/_components/common/_footer.scss */
+/* line 293, src/scss/_components/common/_footer.scss */
 .footer__sign-btn .icon-font,
 .footer__sign-btn span {
   color: #ffffff;
@@ -1634,17 +1790,17 @@ picture {
   transition: color 0.35s ease-in-out;
 }
 
-/* line 248, src/scss/_components/common/_footer.scss */
+/* line 299, src/scss/_components/common/_footer.scss */
 .footer__sign-btn .icon-font {
   font-size: 24px;
 }
 
-/* line 251, src/scss/_components/common/_footer.scss */
+/* line 302, src/scss/_components/common/_footer.scss */
 .footer__sign-btn .icon-font + span {
   padding-left: 10px;
 }
 
-/* line 256, src/scss/_components/common/_footer.scss */
+/* line 307, src/scss/_components/common/_footer.scss */
 .footer__sign-btn span {
   font-weight: 500;
   font-size: 18px;
@@ -3301,7 +3457,15 @@ picture {
   padding-bottom: 115px;
 }
 
-/* line 8, src/scss/_components/about/_about.scss */
+@media screen and (max-width: 767px) {
+  /* line 3, src/scss/_components/about/_about.scss */
+  .about {
+    padding-top: 150px;
+    padding-bottom: 100px;
+  }
+}
+
+/* line 12, src/scss/_components/about/_about.scss */
 .about__bg {
   z-index: 0;
   overflow: hidden;
@@ -3312,12 +3476,12 @@ picture {
   height: 100%;
 }
 
-/* line 17, src/scss/_components/about/_about.scss */
+/* line 21, src/scss/_components/about/_about.scss */
 .about__bg > div {
   position: absolute;
 }
 
-/* line 20, src/scss/_components/about/_about.scss */
+/* line 24, src/scss/_components/about/_about.scss */
 .about__bg > div:nth-of-type(1) {
   top: 40%;
   -webkit-transform: translateY(-50%);
@@ -3326,7 +3490,7 @@ picture {
   left: -50px;
 }
 
-/* line 25, src/scss/_components/about/_about.scss */
+/* line 29, src/scss/_components/about/_about.scss */
 .about__bg > div:nth-of-type(1) img {
   display: block;
   max-width: 137px;
@@ -3335,25 +3499,34 @@ picture {
           filter: drop-shadow(-1px 33px 48px rgba(128, 119, 242, 0.52));
 }
 
-/* line 32, src/scss/_components/about/_about.scss */
+/* line 36, src/scss/_components/about/_about.scss */
 .about__bg > div:nth-of-type(2) {
   left: 50px;
   bottom: 200px;
 }
 
-/* line 36, src/scss/_components/about/_about.scss */
+/* line 40, src/scss/_components/about/_about.scss */
 .about__bg > div:nth-of-type(3) {
   top: 100px;
   right: -50px;
 }
 
-/* line 43, src/scss/_components/about/_about.scss */
+@media screen and (max-width: 767px) {
+  /* line 40, src/scss/_components/about/_about.scss */
+  .about__bg > div:nth-of-type(3) {
+    -webkit-transform: scale(0.55);
+        -ms-transform: scale(0.55);
+            transform: scale(0.55);
+  }
+}
+
+/* line 50, src/scss/_components/about/_about.scss */
 .about__wrapper {
   z-index: 2;
   position: relative;
 }
 
-/* line 48, src/scss/_components/about/_about.scss */
+/* line 55, src/scss/_components/about/_about.scss */
 .about__title {
   padding-bottom: 40px;
   font-weight: bold;
@@ -3364,15 +3537,23 @@ picture {
 }
 
 @media screen and (max-width: 1279px) {
-  /* line 48, src/scss/_components/about/_about.scss */
+  /* line 55, src/scss/_components/about/_about.scss */
   .about__title {
     font-size: 40px;
     line-height: 60px;
   }
 }
 
+@media screen and (max-width: 767px) {
+  /* line 55, src/scss/_components/about/_about.scss */
+  .about__title {
+    font-size: 35px;
+    line-height: 50px;
+  }
+}
+
 @media screen and (max-width: 1279px) {
-  /* line 61, src/scss/_components/about/_about.scss */
+  /* line 72, src/scss/_components/about/_about.scss */
   .about__desc {
     width: 100%;
     max-width: 700px;
@@ -3381,7 +3562,7 @@ picture {
   }
 }
 
-/* line 69, src/scss/_components/about/_about.scss */
+/* line 80, src/scss/_components/about/_about.scss */
 .about__desc p {
   font-size: 18px;
   line-height: 34px;
@@ -3389,9 +3570,17 @@ picture {
 }
 
 @media screen and (max-width: 1279px) {
-  /* line 69, src/scss/_components/about/_about.scss */
+  /* line 80, src/scss/_components/about/_about.scss */
   .about__desc p {
     font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  /* line 80, src/scss/_components/about/_about.scss */
+  .about__desc p {
+    font-size: 14px;
+    line-height: 30px;
   }
 }
 

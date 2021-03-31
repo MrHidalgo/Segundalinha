@@ -15,6 +15,7 @@
 				}
 				&:nth-of-type(2) {
 					display: none;
+					max-width: 50px;
 					@include adaptive(1279) {
 						display: block;
 					}
@@ -25,6 +26,10 @@
 
 	&.logo--footer {
 		padding-bottom: 47px;
+		@include adaptive(767) {
+			justify-content: center;
+			padding-bottom: 50px;
+		}
 	}
 
 	&__btn {
@@ -32,6 +37,9 @@
 		align-items: flex-start;
 		width: 100%;
 		max-width: 357px;
+		@include adaptive(767) {
+			max-width: 300px;
+		}
 
 		img {
 			display: block;

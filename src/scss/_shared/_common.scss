@@ -2,6 +2,11 @@
 
 .copyright {
 	display: flex;
+	@include adaptive(767) {
+		justify-content: center;
+		text-align: center;
+		padding-bottom: 15px;
+	}
 
 	&__text {
 		font-size: 14px;

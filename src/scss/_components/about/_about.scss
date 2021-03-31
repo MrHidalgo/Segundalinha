@@ -4,6 +4,10 @@
 	position: relative;
 	padding-top: 194px;
 	padding-bottom: 115px;
+	@include adaptive(767) {
+		padding-top: 150px;
+		padding-bottom: 100px;
+	}
 
 	&__bg {
 		z-index: 0;
@@ -36,6 +40,9 @@
 			&:nth-of-type(3) {
 				top: 100px;
 				right: -50px;
+				@include adaptive(767) {
+				  transform: scale(0.55);
+				}
 			}
 		}
 	}
@@ -56,6 +63,10 @@
 			font-size: 40px;
 			line-height: 60px;
 		}
+		@include adaptive(767) {
+			font-size: 35px;
+			line-height: 50px;
+		}
 	}
 
 	&__desc {
@@ -72,6 +83,10 @@
 			color: #E8E8E8;
 			@include adaptive(1279) {
 				font-size: 16px;
+			}
+			@include adaptive(767) {
+				font-size: 14px;
+				line-height: 30px;
 			}
 		}
 	}
