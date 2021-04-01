@@ -39,56 +39,68 @@
 	@if $filename == arrow-top {
 		$char: "\E004";
 	}
-	@if $filename == conversation {
+	@if $filename == battery {
 		$char: "\E005";
 	}
-	@if $filename == crm {
+	@if $filename == cellular-connection {
 		$char: "\E006";
 	}
-	@if $filename == cubes {
+	@if $filename == conversation {
 		$char: "\E007";
 	}
-	@if $filename == diamond {
+	@if $filename == crm {
 		$char: "\E008";
 	}
-	@if $filename == digital {
+	@if $filename == cubes {
 		$char: "\E009";
 	}
-	@if $filename == emoticons {
+	@if $filename == diamond {
 		$char: "\E00A";
 	}
-	@if $filename == facebook {
+	@if $filename == digital {
 		$char: "\E00B";
 	}
-	@if $filename == global {
+	@if $filename == emoticons {
 		$char: "\E00C";
 	}
-	@if $filename == instagram {
+	@if $filename == facebook {
 		$char: "\E00D";
 	}
-	@if $filename == ios {
+	@if $filename == global {
 		$char: "\E00E";
 	}
-	@if $filename == responsive-design {
+	@if $filename == instagram {
 		$char: "\E00F";
 	}
-	@if $filename == sim-card {
+	@if $filename == ios {
 		$char: "\E010";
 	}
-	@if $filename == technical-support {
+	@if $filename == responsive-design {
 		$char: "\E011";
 	}
-	@if $filename == twitter {
+	@if $filename == sim-card {
 		$char: "\E012";
 	}
-	@if $filename == user {
+	@if $filename == technical-support {
 		$char: "\E013";
 	}
-	@if $filename == windows {
+	@if $filename == twitter {
 		$char: "\E014";
 	}
-	@if $filename == youtube {
+	@if $filename == up-arrow {
 		$char: "\E015";
+	}
+	@if $filename == user {
+		$char: "\E016";
+	}
+	@if $filename == wifi {
+		$char: "\E017";
+	}
+	@if $filename == windows {
+		$char: "\E018";
+	}
+	@if $filename == youtube {
+		$char: "\E019";
 	}
 
 	@return $char;
@@ -119,6 +131,14 @@
 }
 .icon-arrow-top {
 	@include icon(arrow-top);
+
+}
+.icon-battery {
+	@include icon(battery);
+
+}
+.icon-cellular-connection {
+	@include icon(cellular-connection);
 
 }
 .icon-conversation {
@@ -177,8 +197,16 @@
 	@include icon(twitter);
 
 }
+.icon-up-arrow {
+	@include icon(up-arrow);
+
+}
 .icon-user {
 	@include icon(user);
+
+}
+.icon-wifi {
+	@include icon(wifi);
 
 }
 .icon-windows {

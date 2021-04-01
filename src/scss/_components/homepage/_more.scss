@@ -80,7 +80,7 @@
 					padding-bottom: 75px;
 				}
 				@include adaptive(1023) {
-					max-width: calc(100% / 3);
+					max-width: calc(100% / 2);
 				}
 			}
 		}

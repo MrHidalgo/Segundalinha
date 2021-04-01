@@ -21,20 +21,67 @@ section#connect.connect
           img(src="img/dot-grid.svg" alt="")
       .connect__wrapper-content
 
-        p.connect__title(data-title="CONECTE OS APLICATIVOS QUE SEU NEGÓCIO USA" data-aos="fade-up" data-aos-easing="ease-in-out") CONECTE OS APLICATIVOS QUE SEU NEGÓCIO USA
-        p.connect__desc(data-aos="fade-up" data-aos-delay="100" data-aos-easing="ease-in-out") Não perca mais nenhum detalhe sobre os seus clientes. Integramos os seus números da SegundaLinha aos principais aplicativos do mercado!
+        p.connect__title CONECTE OS APLICATIVOS QUE SEU NEGÓCIO USA
+        p.connect__desc Não perca mais nenhum detalhe sobre os seus clientes. Integramos os seus números da SegundaLinha aos principais aplicativos do mercado!
 
         .connect__visual
-          img(src="img/img-connect-desc.svg" alt="" data-aos="fade-up" data-aos-delay="150" data-aos-easing="ease-in-out")
+
+          .connect__visual-cell
+            div
+              p Chamadas Completas
+            div
+              span
+                i.icon-font.icon-up-arrow
 
           .connect__visual-badge
-            div(data-aos="fade-up" data-aos-delay="200" data-aos-easing="ease-in-out")
-              img(src="img/img-connect-calls.svg" alt="")
-            div(data-aos="fade-up" data-aos-delay="200" data-aos-easing="ease-in-out")
-              img(src="img/img-connect-badge.svg" alt="")
+            .connect__visual-badge-head
+              div
+                p Iniciado
+                h2 19:03
+                span Maio de 2020
+              div
+                a(href="#") Encerrar
+            .connect__visual-badge-body
+              div
+                i
+                  u
+                    img(src="img/img-connect-user.png" alt="")
+              div
+                p Manoel Henrique
+                span Ligando...
 
-          .connect__btn.c-btn__wrapper.c-btn__wrapper--center(data-aos="fade-up" data-aos-easing="ease-in-out")
-            a.c-btn(href="#")
-              span Saiba mais sobre nossas novidades
+          .connect__visual-head
+            div
+              p 9:41
+            div
+              i.icon-font.icon-cellular-connection
+              i.icon-font.icon-wifi
+              i.icon-font.icon-battery
+
+          .connect__visual-body
+
+            .connect__visual-programm
+              div
+                img(src="img/whatsapp.png" srcset="img/whatsapp@2x.png 2x" alt="")
+              div
+                img(src="img/pipedrive.png" srcset="img/pipedrive@2x.png 2x" alt="")
+              div
+                img(src="img/slack.png" srcset="img/slack@2x.png 2x" alt="")
+
+            .connect__visual-block
+
+              .connect__visual-describe
+                div
+                  p Conecte seu WhatsApp Business ao seu número da SegundaLinha e deixe seus colaboradores cuidarem de toda a comunicação.
+                div
+                  p Tenha uma visão geral de todas as interações com os seus clientes conectando o CRM PipeDrive ao seu número.
+                div
+                  p Mantenha todos os seus colaboradores informados sobre o que está acontecendo conectando o Slack com a SegundaLinha.
+
+              p.connect__desc Novas integrações são adicionadas constantemente!
+
+        .connect__btn.c-btn__wrapper.c-btn__wrapper--center
+          a.c-btn(href="#")
+            span Saiba mais sobre nossas novidades
 
 // SECTION :: END

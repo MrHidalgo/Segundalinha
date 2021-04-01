@@ -108,7 +108,7 @@
 						min-width: 1px;
 						max-width: 100%;
 						@include adaptive(767) {
-							flex: 50%;
+							flex: 100%;
 							padding-bottom: 30px;
 						}
 					}
@@ -136,6 +136,7 @@
 
 	&__title {
 		padding-bottom: 20px;
+		font-weight: 500;
 		font-size: 20px;
 		line-height: 36px;
 		color: #EAEAEA;
@@ -166,9 +167,6 @@
 			@include adaptive(1279) {
 				font-size: 16px;
 				line-height: 42px;
-			}
-			@include adaptive(767) {
-				font-size: 14px;
 			}
 
 			&:hover {
@@ -203,7 +201,7 @@
 	&__info {
 		width: 100%;
 		max-width: 552px;
-		padding-bottom: 15px;
+		padding-bottom: 47px;
 		font-size: 20px;
 		line-height: 31px;
 		color: #E9F7FE;

@@ -164,6 +164,12 @@
 					}
 				}
 			}
+
+			.how__box-num {
+				@include adaptive(1023) {
+					transform: translateY(50%);
+				}
+			}
 		}
 
 		&-wrapper {
@@ -209,6 +215,10 @@
 			@include adaptive(1279) {
 				font-size: 188px;
 			}
+			@include adaptive(1023) {
+				transform: translateY(10%);
+				font-size: 155px;
+			}
 		}
 
 		&-head,
@@ -233,6 +243,9 @@
 
 		&-body {
 			padding-top: 50px;
+			@include adaptive(1023) {
+				padding-top: 30px;
+			}
 
 			p {
 				width: 100%;

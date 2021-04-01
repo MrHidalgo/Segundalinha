@@ -103,6 +103,9 @@
 				right: 0;
 				margin-left: auto;
 				margin-right: auto;
+				@include adaptive(1023) {
+					opacity: 0.2;
+				}
 			}
 		}
 
@@ -153,7 +156,7 @@
 				right: 50px;
 			}
 			@include adaptive(1023) {
-				display: none !important;
+				transform: scale(0.65);
 			}
 		}
 
