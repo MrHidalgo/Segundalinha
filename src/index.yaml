@@ -3,7 +3,7 @@ ProjectTitle: Segundalinha
 PageList:
 - file: index.html
   titleName: Homepage
-  ready: 55
+  ready: 95
 - file: team.html
   titleName: My Team
   ready: 95

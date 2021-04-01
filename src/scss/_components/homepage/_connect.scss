@@ -8,7 +8,7 @@
 		padding-bottom: 150px;
 	}
 	@include adaptive(767) {
-		padding-top: 50px;
+		padding-top: 0;
 		padding-bottom: 100px;
 	}
 
@@ -37,13 +37,17 @@
 			&:nth-of-type(3) {
 				top: 100px;
 				left: 20%;
-				@include adaptive(1023) {
+				@include adaptive(767) {
 					display: none !important;
 				}
 			}
 			&:nth-of-type(4) {
 				top: 25px;
 				right: 125px;
+				@include adaptive(767) {
+					transform: scale(0.55);
+					//display: none !important;
+				}
 			}
 		}
 
@@ -73,6 +77,9 @@
 			background-repeat: no-repeat;
 			background-position: center top;
 			background-size: contain;
+			@include adaptive(767) {
+				background-image: none;
+			}
 
 			> div {
 				position: absolute;
@@ -142,6 +149,7 @@
 			padding-bottom: 15px;
 			font-size: 35px;
 			line-height: 55px;
+			color: #00CAAD;
 		}
 	}
 
@@ -159,7 +167,7 @@
 			padding-bottom: 175px;
 		}
 		@include adaptive(767) {
-			padding-bottom: 200px;
+			padding-bottom: 50px;
 			font-size: 18px;
 		}
 	}
@@ -212,6 +220,9 @@
 
 		&-body {
 			padding-top: 120px;
+			@include adaptive(767) {
+				padding-top: 50px;
+			}
 
 			.connect__desc {
 				padding-bottom: 20px;
@@ -392,7 +403,7 @@
 				transform: translate(-50%, -50%);
 			}
 			@include adaptive(767) {
-				padding: 15px;
+				display: none;
 			}
 
 			&-head {
