@@ -4,6 +4,9 @@
 	position: relative;
 	padding-top: 100px;
 	padding-bottom: 75px;
+	@include adaptive(767) {
+		padding-bottom: 50px;
+	}
 
 	&__bg {
 		z-index: 0;
@@ -23,10 +26,16 @@
 			&:nth-of-type(2) {
 				top: 0;
 				right: 100px;
+				@include adaptive(767) {
+					display: none;
+				}
 			}
 			&:nth-of-type(3) {
 				left: 50px;
 				bottom: 10%;
+				@include adaptive(767) {
+					transform: scale(0.55);
+				}
 			}
 
 			img {
@@ -48,6 +57,10 @@
 		@include adaptive(1279) {
 			font-size: 40px;
 		}
+		@include adaptive(767) {
+			font-size: 35px;
+			line-height: 55px;
+		}
 
 		&:before {
 			z-index: 0;
@@ -66,6 +79,9 @@
 			@include adaptive(1023) {
 				font-size: 57px;
 			}
+			@include adaptive(767) {
+				display: none;
+			}
 		}
 	}
 
@@ -81,6 +97,9 @@
 		color: #aeaeae;
 		@include adaptive(1279) {
 			font-size: 24px;
+		}
+		@include adaptive(767) {
+			font-size: 18px;
 		}
 	}
 
@@ -219,6 +238,10 @@
 				transform: translateY(10%);
 				font-size: 155px;
 			}
+			@include adaptive(767) {
+				transform: translateY(25%);
+				font-size: 125px;
+			}
 		}
 
 		&-head,
@@ -231,6 +254,9 @@
 			flex: 1;
 			min-height: 1px;
 			max-height: 100%;
+			@include adaptive(767) {
+				height: 350px;
+			}
 
 			img {
 				display: block;
@@ -238,6 +264,9 @@
 				height: auto;
 				margin-left: auto;
 				margin-right: auto;
+				@include adaptive(767) {
+					max-height: 100%;
+				}
 			}
 		}
 
@@ -257,6 +286,9 @@
 				line-height: 32px;
 				text-align: center;
 				color: #FFFFFF;
+				@include adaptive(767) {
+					font-size: 20px;
+				}
 			}
 		}
 	}

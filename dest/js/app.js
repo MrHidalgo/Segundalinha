@@ -184,10 +184,10 @@ window.addEventListener('scroll', function (ev) {
 	};
 
 	var pathFloatingAnimation = function pathFloatingAnimation() {
-		var xMin = -25,
-		    xMax = 25,
-		    yMin = -50,
-		    yMax = 50,
+		var xMin = -10,
+		    xMax = 10,
+		    yMin = -20,
+		    yMax = 20,
 		    positionsPerElement = 5,
 		    secondsPerIteration = 5,
 		    elements = $("[floating-node-js]");

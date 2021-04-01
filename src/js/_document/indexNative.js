@@ -18,10 +18,10 @@
 	
 	
 	const pathFloatingAnimation = () => {
-		let xMin = -25,
-			xMax = 25,
-			yMin = -50,
-			yMax = 50,
+		let xMin = -10,
+			xMax = 10,
+			yMin = -20,
+			yMax = 20,
 			positionsPerElement = 5,
 			secondsPerIteration = 5,
 			elements = $("[floating-node-js]");

@@ -16,6 +16,10 @@
   box-shadow: none;
   background: linear-gradient(153.28deg, #00CAAD -3.1%, #7168ED 83.26%), linear-gradient(180deg, #FF77A0 0%, #8770FD 100%), linear-gradient(0deg, #572BE6, #572BE6), #5E56E9;
   background-size: 200% 100%;
+  @include adaptive(767) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 
   &:hover {
     animation: animatedGradient 2s ease-in-out alternate infinite;
@@ -46,8 +50,10 @@
   span {
     font-weight: 500;
     font-size: 17px;
-    line-height: 25px;
     color: #F7F8FA;
+    @include adaptive(767) {
+      font-size: 15px;
+    }
   }
 }
 

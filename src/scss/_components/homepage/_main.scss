@@ -6,6 +6,10 @@
 	@include adaptive(1023) {
 		padding-bottom: 100px;
 	}
+	@include adaptive(767) {
+		padding-top: 100px;
+		padding-bottom: 50px;
+	}
 
 	&__bg {
 		z-index: 0;
@@ -22,6 +26,9 @@
 				top: 30%;
 				transform: translateY(-50%);
 				left: -50px;
+				@include adaptive(767) {
+					transform: scale(0.75);
+				}
 
 				img {
 					display: block;
@@ -34,6 +41,9 @@
 			&:nth-of-type(2) {
 				top: 100px;
 				right: -50px;
+				@include adaptive(767) {
+					transform: scale(0.55);
+				}
 			}
 
 			&:nth-of-type(3) {
@@ -49,6 +59,10 @@
 				border-radius: 50%;
 				background-color: rgba(#9C60FF, 0.6);
 				filter: blur(100px);
+				@include adaptive(767) {
+					width: 200px;
+					height: 200px;
+				}
 			}
 		}
 	}
@@ -67,6 +81,11 @@
 		@include adaptive(1279) {
 			font-size: 40px;
 		}
+		@include adaptive(767) {
+			padding-bottom: 30px;
+			font-size: 35px;
+			line-height: 55px;
+		}
 	}
 
 	&__slogan {
@@ -77,6 +96,10 @@
 		color: #AEAEAE;
 		@include adaptive(1279) {
 			font-size: 24px;
+		}
+		@include adaptive(767) {
+			padding-bottom: 30px;
+			font-size: 18px;
 		}
 	}
 
@@ -94,6 +117,10 @@
 		}
 
 		&-device {
+			@include adaptive(767) {
+				opacity: 0 !important;
+			}
+
 			&--clone {
 				opacity: 0.4;
 				filter: contrast(0.5);
@@ -106,6 +133,9 @@
 				@include adaptive(1023) {
 					opacity: 0.2;
 				}
+				@include adaptive(767) {
+					display: none !important;
+				}
 			}
 		}
 
@@ -114,6 +144,9 @@
 				position: absolute;
 				top: 100px;
 				left: 25px;
+				@include adaptive(767) {
+					display: none !important;
+				}
 			}
 			&--small {
 				position: absolute;
@@ -129,6 +162,9 @@
 			position: absolute;
 			bottom: 200px;
 			right: 200px;
+			@include adaptive(767) {
+				display: none !important;
+			}
 		}
 
 		&-orb {
@@ -157,6 +193,10 @@
 			}
 			@include adaptive(1023) {
 				transform: scale(0.65);
+			}
+			@include adaptive(767) {
+				top: -75px;
+				transform: scale(1);
 			}
 		}
 

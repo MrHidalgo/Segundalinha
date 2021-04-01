@@ -7,6 +7,10 @@
 	@include adaptive(1279) {
 		padding-bottom: 150px;
 	}
+	@include adaptive(767) {
+		padding-top: 50px;
+		padding-bottom: 100px;
+	}
 
 	&__bg {
 		z-index: 0;
@@ -26,6 +30,9 @@
 			&:nth-of-type(2) {
 				top: 150px;
 				left: 25px;
+				@include adaptive(767) {
+					display: none !important;
+				}
 			}
 			&:nth-of-type(3) {
 				top: 100px;
@@ -131,6 +138,11 @@
 		@include adaptive(1279) {
 			font-size: 40px;
 		}
+		@include adaptive(767) {
+			padding-bottom: 15px;
+			font-size: 35px;
+			line-height: 55px;
+		}
 	}
 
 	&__desc {
@@ -145,6 +157,10 @@
 		color: #FFFFFF;
 		@include adaptive(1919) {
 			padding-bottom: 175px;
+		}
+		@include adaptive(767) {
+			padding-bottom: 200px;
+			font-size: 18px;
 		}
 	}
 
@@ -209,6 +225,11 @@
 			padding-left: 65px;
 			padding-right: 65px;
 			padding-bottom: 45px;
+			@include adaptive(767) {
+				flex-wrap: wrap;
+				padding-left: 15px;
+				padding-right: 15px;
+			}
 
 			> div {
 				display: flex;
@@ -218,11 +239,31 @@
 				max-width: calc(100% / 3);
 				padding-left: 10px;
 				padding-right: 10px;
+				@include adaptive(767) {
+					flex-direction: column;
+					max-width: 100%;
+
+					&:not(:last-of-type) {
+						padding-bottom: 50px;
+					}
+				}
 
 				img {
 					display: block;
 					max-width: 100%;
 					height: auto;
+				}
+
+				p {
+					display: none;
+					padding-top: 15px;
+					font-size: 16px;
+					line-height: 24px;
+					text-align: center;
+					color: #BEBEBE;
+					@include adaptive(767) {
+						display: block;
+					}
 				}
 			}
 		}
@@ -241,6 +282,9 @@
 		&-describe {
 			display: flex;
 			padding-bottom: 65px;
+			@include adaptive(767) {
+				display: none;
+			}
 
 			> div {
 				width: 100%;
@@ -347,6 +391,9 @@
 				right: auto;
 				transform: translate(-50%, -50%);
 			}
+			@include adaptive(767) {
+				padding: 15px;
+			}
 
 			&-head {
 				display: flex;
@@ -358,17 +405,26 @@
 					line-height: 35px;
 					color: #FFFFFF;
 					opacity: 0.45;
+					@include adaptive(767) {
+						font-size: 20px;
+					}
 				}
 
 				h2 {
 					font-size: 45.5148px;
 					color: rgba(255, 255, 255, 0.91);
+					@include adaptive(767) {
+						font-size: 35px;
+					}
 				}
 
 				span {
 					font-size: 21px;
 					line-height: 31px;
 					color: #92AEFF;
+					@include adaptive(767) {
+						font-size: 17px;
+					}
 				}
 
 				a {
@@ -386,8 +442,13 @@
 					box-shadow: 11.7458px 14.6822px 26.428px rgba(0, 0, 0, 0.3), inset 1.46822px 1.46822px 1.46822px rgba(255, 255, 255, 0.2);
 					border-radius: 12px;
 					font-size: 23px;
-					line-height: 35px;
 					color: #FFFFFF;
+					@include adaptive(767) {
+						height: 45px;
+						padding-left: 20px;
+						padding-right: 20px;
+						font-size: 18px;
+					}
 				}
 			}
 
@@ -438,12 +499,18 @@
 					font-size: 23px;
 					line-height: 35px;
 					color: #FFFFFF;
+					@include adaptive(767) {
+						font-size: 19px;
+					}
 				}
 
 				span {
 					font-size: 21px;
 					line-height: 31px;
 					color: #B4BDFB;
+					@include adaptive(767) {
+						font-size: 17px;
+					}
 				}
 			}
 		}
